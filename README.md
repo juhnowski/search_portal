@@ -6,7 +6,7 @@
 1. mkdir portal && cd portal
 1. virtualenv .env
 1. source .env/bin/activate
-1. git clone --recurse-submodules https://gitlab.com/lab50/portal/backend.git
+1. git clone
 1. cd backend && pip install -r requirements.txt
 1. cd infoportal
 1. python manage.py makemigrations users documents notes folders search analytics integration && python manage.py migrate

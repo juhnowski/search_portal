@@ -38,22 +38,6 @@
 2) psql -d infoportal
 3) CREATE EXTENSION pg_trgm;
 
-# Ручной запуск импорта
-
-Импорт из Нормдока:
-```
-python3 integration/run_debug_import.py --permitted-docs=integration/good_docs.txt normdoc
-```
-Если хотите использовать Нормдок с нашей ВМ, то надо пробросить порт:
-```
-ssh -f -N -L 18180:10.3.11.156:8180 user@delta
-```
-
-Импорт из БД с XML:
-```
-python3 integration/run_debug_import.py xml
-```
-Для этого нужен пакет `libsaxonb-java`.
 
 Для создания/обновления индекса поиска по БД:
 cd backend/infoportal

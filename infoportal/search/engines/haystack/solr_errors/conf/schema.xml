@@ -1,0 +1,15 @@
+<field name="doc_kind" type="string" indexed="true" stored="true"/>
+<field name="doc_mark" type="string" indexed="true" stored="true"/>
+<field name="doc_name_ru" type="string" indexed="true" stored="true"/>
+<field name="doc_name_en" type="string" indexed="true" stored="true"/>
+<field name="doc_annotation" type="string" indexed="true" stored="true"/>
+<field name="doc_comment" type="string" indexed="true" stored="true"/>
+<field name="doc_full_mark" type="string" indexed="true" stored="true"/>
+<field name="tk_rus" type="string" indexed="true" stored="true"/>
+<field name="mtk_dev" type="string" indexed="true" stored="true"/>
+<field name="keywords" type="string" indexed="true" stored="true"/>
+<field name="doc_assign_date" type="pdate" indexed="true" stored="true"/>
+<field name="doc_effective_date" type="pdate" indexed="true" stored="true"/>
+<field name="doc_restoration_date" type="pdate" indexed="true" stored="true"/>
+<field name="doc_restoration_date" type="pdate" indexed="true" stored="true"/>
+<field name="search_text" type="string" indexed="true" stored="true"/>

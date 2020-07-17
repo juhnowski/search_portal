@@ -1,0 +1,549 @@
+{
+  "info" : {
+    "title" : "API",
+    "version" : "1.0.0",
+    "description" : "АПИ портала СТИ."
+  },
+  "servers" : [ {
+    "url" : "/v1"
+  } ],
+  "openapi" : "3.0.0",
+  "paths" : {
+    "/users" : {
+      "get" : {
+        "description" : "Получение списка пользователей.",
+        "operationId" : "listUsers",
+        "parameters" : [ {
+          "in" : "query",
+          "name" : "limit",
+          "schema" : {
+            "description" : "Количество возвращаемых объектов на одной странице.",
+            "title" : "Limit",
+            "type" : "integer"
+          }
+        }, {
+          "in" : "query",
+          "name" : "offset",
+          "schema" : {
+            "description" : "Начальный индекс возвращаемых результатов.",
+            "title" : "Offset",
+            "type" : "integer"
+          }
+        }, {
+          "in" : "header",
+          "name" : "Authorization",
+          "schema" : {
+            "description" : "Отправить токен",
+            "type" : "string"
+          },
+          "required" : true
+        } ],
+        "tags" : [ "users" ],
+        "responses" : {
+          "200" : {
+            "description" : "Успешно возвращен список пользователей.",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "count" : {
+                      "type" : "integer",
+                      "description" : "Количество пользователей"
+                    },
+                    "next" : {
+                      "type" : "string",
+                      "description" : "Ссылка на последующую страницу пагинации, если нет, то null"
+                    },
+                    "previous" : {
+                      "type" : "string",
+                      "description" : "Ссылка на предыдущую страницу пагинации, если нет, то null"
+                    },
+                    "results" : {
+                      "type" : "array",
+                      "items" : {
+                        "type" : "object",
+                        "properties" : {
+                          "email" : {
+                            "type" : "string"
+                          },
+                          "username" : {
+                            "type" : "string"
+                          },
+                          "first_name" : {
+                            "type" : "string"
+                          },
+                          "last_name" : {
+                            "type" : "string"
+                          },
+                          "patronymic" : {
+                            "type" : "string"
+                          },
+                          "phone" : {
+                            "type" : "string"
+                          },
+                          "company" : {
+                            "type" : "integer"
+                          },
+                          "role" : {
+                            "type" : "string"
+                          },
+                          "user_settings" : {
+                            "properties" : {
+                              "font_size" : {
+                                "type" : "integer"
+                              },
+                              "font_colour" : {
+                                "type" : "string"
+                              },
+                              "scheme_colour" : {
+                                "type" : "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        }
+      }
+    },
+    "/users/create" : {
+      "post" : {
+        "tags" : [ "users" ],
+        "summary" : "Create user",
+        "description" : "Создание пользователя",
+        "operationId" : "createUser",
+        "parameters" : [ {
+          "in" : "header",
+          "name" : "Authorization",
+          "schema" : {
+            "type" : "string"
+          },
+          "required" : true
+        } ],
+        "requestBody" : {
+          "required" : true,
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/UserCreate"
+              }
+            }
+          }
+        },
+        "responses" : {
+          "201" : {
+            "description" : "Created"
+          },
+          "400" : {
+            "description" : "Пользователь с такой электронной почтой уже существует.",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/UserCreate"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/users/{id}" : {
+      "delete" : {
+        "description" : "Удаление пользователя по pk.",
+        "operationId" : "deleteUser",
+        "parameters" : [ {
+          "in" : "path",
+          "name" : "id",
+          "required" : true,
+          "schema" : {
+            "description" : "Уникальное значение, идентифицирующее этого пользователя.",
+            "title" : "ID",
+            "type" : "integer"
+          }
+        }, {
+          "in" : "header",
+          "name" : "Authorization",
+          "schema" : {
+            "description" : "Отправить токен",
+            "type" : "string"
+          },
+          "required" : true
+        } ],
+        "tags" : [ "users" ],
+        "responses" : {
+          "204" : {
+            "description" : "No Content"
+          }
+        }
+      },
+      "get" : {
+        "description" : "Получить пользователя по pk.",
+        "operationId" : "getUser",
+        "parameters" : [ {
+          "in" : "path",
+          "name" : "id",
+          "required" : true,
+          "schema" : {
+            "description" : "Уникальное значение, идентифицирующее этого пользователя.",
+            "title" : "ID",
+            "type" : "integer"
+          }
+        }, {
+          "in" : "header",
+          "name" : "Authorization",
+          "schema" : {
+            "description" : "Отправить токен",
+            "type" : "string"
+          },
+          "required" : true
+        } ],
+        "tags" : [ "users" ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/UserResponse"
+                }
+              }
+            }
+          },
+          "404" : {
+            "description" : "Not found."
+          }
+        }
+      },
+      "patch" : {
+        "description" : "Частичное изменение пользователя по pk.",
+        "operationId" : "partialUpdateUser",
+        "parameters" : [ {
+          "in" : "path",
+          "name" : "id",
+          "required" : true,
+          "schema" : {
+            "description" : "Уникальное значение, идентифицирующее этого пользователя.",
+            "title" : "ID",
+            "type" : "integer"
+          }
+        }, {
+          "in" : "header",
+          "name" : "Authorization",
+          "schema" : {
+            "description" : "Отправить токен",
+            "type" : "string"
+          },
+          "required" : true
+        } ],
+        "requestBody" : {
+          "required" : true,
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/UserChange"
+              }
+            }
+          }
+        },
+        "tags" : [ "users" ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/UserResponse"
+                }
+              }
+            }
+          },
+          "404" : {
+            "description" : "Not found."
+          }
+        }
+      },
+      "put" : {
+        "description" : "Изменение пользователя по его pk.",
+        "operationId" : "updateUser",
+        "parameters" : [ {
+          "in" : "path",
+          "name" : "id",
+          "required" : true,
+          "schema" : {
+            "description" : "Уникальное значение, идентифицирующее этого пользователя.",
+            "title" : "ID",
+            "type" : "integer"
+          }
+        }, {
+          "in" : "header",
+          "name" : "Authorization",
+          "schema" : {
+            "description" : "Отправить токен",
+            "type" : "string"
+          },
+          "required" : true
+        } ],
+        "requestBody" : {
+          "required" : true,
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/UserChange"
+              }
+            }
+          }
+        },
+        "tags" : [ "users" ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/UserResponse"
+                }
+              }
+            }
+          },
+          "404" : {
+            "description" : "Not found."
+          }
+        }
+      }
+    },
+    "/check_token" : {
+      "get" : {
+        "description" : "Проверка токена",
+        "operationId" : "checkToken",
+        "parameters" : [ {
+          "in" : "header",
+          "name" : "Authorization",
+          "schema" : {
+            "description" : "Отправить токен",
+            "type" : "string"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/UserResponse"
+                }
+              }
+            }
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "UserCreate" : {
+        "type" : "object",
+        "properties" : {
+          "email" : {
+            "type" : "string",
+            "description" : "email пользователя"
+          },
+          "username" : {
+            "type" : "string",
+            "maxLength" : 50,
+            "description" : "Логин пользователя для входа на портал"
+          },
+          "first_name" : {
+            "type" : "string",
+            "maxLength" : 30,
+            "description" : "Имя"
+          },
+          "last_name" : {
+            "type" : "string",
+            "maxLength" : 30,
+            "description" : "Фамилия"
+          },
+          "patronymic" : {
+            "type" : "string",
+            "maxLength" : 30,
+            "description" : "Отчество"
+          },
+          "password" : {
+            "type" : "string",
+            "description" : "Пароль"
+          },
+          "phone" : {
+            "type" : "string",
+            "maxLength" : 30,
+            "description" : "Телефон"
+          },
+          "role" : {
+            "type" : "string",
+            "maxLength" : 2,
+            "description" : "Роль пользователя "
+          },
+          "company" : {
+            "type" : "object",
+            "description" : "Компания пользователя",
+            "properties" : {
+              "company_name" : {
+                "type" : "string",
+                "maxLength" : 100,
+                "description" : "Название компании"
+              },
+              "position_сompany" : {
+                "type" : "string",
+                "description" : "Должность пользователя"
+              }
+            }
+          }
+        }
+      },
+      "UserResponse" : {
+        "type" : "object",
+        "properties" : {
+          "email" : {
+            "type" : "string",
+            "description" : "email пользователя"
+          },
+          "username" : {
+            "type" : "string",
+            "maxLength" : 50,
+            "description" : "Логин пользователя для входа на портал"
+          },
+          "first_name" : {
+            "type" : "string",
+            "maxLength" : 30,
+            "description" : "Имя"
+          },
+          "last_name" : {
+            "type" : "string",
+            "maxLength" : 30,
+            "description" : "Фамилия"
+          },
+          "patronymic" : {
+            "type" : "string",
+            "maxLength" : 30,
+            "description" : "Отчество"
+          },
+          "password" : {
+            "type" : "string",
+            "description" : "Пароль"
+          },
+          "phone" : {
+            "type" : "string",
+            "maxLength" : 30,
+            "description" : "Телефон"
+          },
+          "role" : {
+            "type" : "string",
+            "maxLength" : 2,
+            "description" : "Роль пользователя "
+          },
+          "company" : {
+            "type" : "integer",
+            "description" : "Компания пользователя"
+          },
+          "user_settings" : {
+            "type" : "object",
+            "description" : "Личные настройки пользователя",
+            "properties" : {
+              "font_size" : {
+                "description" : "Размер шрифта",
+                "type" : "integer"
+              },
+              "font_colour" : {
+                "description" : "Цвет шрифта",
+                "type" : "string"
+              },
+              "scheme_colour" : {
+                "description" : "Цветовая схема",
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "UserChange" : {
+        "type" : "object",
+        "properties" : {
+          "email" : {
+            "type" : "string",
+            "description" : "email пользователя"
+          },
+          "username" : {
+            "type" : "string",
+            "maxLength" : 50,
+            "description" : "Логин пользователя для входа на портал"
+          },
+          "first_name" : {
+            "type" : "string",
+            "maxLength" : 30,
+            "description" : "Имя"
+          },
+          "last_name" : {
+            "type" : "string",
+            "maxLength" : 30,
+            "description" : "Фамилия"
+          },
+          "patronymic" : {
+            "type" : "string",
+            "maxLength" : 30,
+            "description" : "Отчество"
+          },
+          "password" : {
+            "type" : "string",
+            "description" : "Пароль"
+          },
+          "phone" : {
+            "type" : "string",
+            "maxLength" : 30,
+            "description" : "Телефон"
+          },
+          "role" : {
+            "type" : "string",
+            "maxLength" : 2,
+            "description" : "Роль пользователя "
+          },
+          "company" : {
+            "type" : "integer",
+            "description" : "Компания пользователя"
+          },
+          "user_settings" : {
+            "type" : "object",
+            "description" : "Личные настройки пользователя",
+            "properties" : {
+              "font_size" : {
+                "description" : "Размер шрифта",
+                "type" : "integer"
+              },
+              "font_colour" : {
+                "description" : "Цвет шрифта",
+                "type" : "string"
+              },
+              "scheme_colour" : {
+                "description" : "Цветовая схема",
+                "type" : "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

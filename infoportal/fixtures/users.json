@@ -1,0 +1,110 @@
+[
+{
+    "model": "users.company",
+    "pk": 1,
+    "fields": {
+        "company_name": "Company 1",
+        "position_\u0441ompany": "Position 1"
+    }
+},
+{
+    "model": "users.company",
+    "pk": 2,
+    "fields": {
+        "company_name": "Company 1",
+        "position_\u0441ompany": "Position 2"
+    }
+},
+{
+    "model": "users.company",
+    "pk": 3,
+    "fields": {
+        "company_name": "Company 2",
+        "position_\u0441ompany": "Position 1"
+    }
+},
+{
+    "model": "users.customuser",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$150000$aIsg4OMTgk54$YGmDpaciAJaF8OJIt+ApERSpQhMr7fIvCExa4T2pQ9s=",
+        "last_login": "2019-11-18T12:47:16.833Z",
+        "is_superuser": true,
+        "email": "admin@gmail.com",
+        "first_name": "",
+        "last_name": "",
+        "patronymic": "",
+        "phone": "",
+        "company": null,
+        "role": "",
+        "is_active": true,
+        "is_staff": true,
+        "date_joined": "2019-09-24T08:40:34.941Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.customuser",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$150000$KaT5RS89HVY4$acUo54EvTueOtHkxoHvO8BfIlN9U2CnExCPoY6GX8JA=",
+        "last_login": null,
+        "is_superuser": false,
+        "email": "email1@gmail.com",
+        "first_name": "\u0410\u043b\u0435\u043a\u0441\u0435\u0439",
+        "last_name": "\u0418\u0432\u0430\u043d\u043e\u0432\u0438\u0447",
+        "patronymic": "\u0418\u0432\u0430\u043d\u043e\u0432",
+        "phone": "232546565",
+        "company": 1,
+        "role": "UR",
+        "is_active": true,
+        "is_staff": false,
+        "date_joined": "2019-09-24T08:43:26Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.customuser",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$150000$auSWN1V61QnV$nK5UnKB60ce2Ff02HA6YxOEVtIlHUeXUC6kzETQk2Lc=",
+        "last_login": null,
+        "is_superuser": false,
+        "email": "email2@gmail.com",
+        "first_name": "\u041f\u0435\u0442\u0440",
+        "last_name": "\u0418\u0432\u0430\u043d\u043e\u0432",
+        "patronymic": "\u041f\u0435\u0442\u0440\u043e\u0432\u0438\u0447",
+        "phone": "3534654657",
+        "company": 2,
+        "role": "UR",
+        "is_active": true,
+        "is_staff": false,
+        "date_joined": "2019-09-24T08:44:18Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.customuser",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$150000$qIzgkBtXtrwN$ST/NDfD6FCSTevJ4foVC6CDV7sOvR7rIpBSK1HuBqpM=",
+        "last_login": null,
+        "is_superuser": false,
+        "email": "email3@gmail.com",
+        "first_name": "\u0421\u0438\u0434\u0440",
+        "last_name": "\u0421\u0438\u0434\u043e\u0440\u043e\u0432",
+        "patronymic": "\u0421\u0438\u0434\u043e\u0440\u043e\u0432\u0438\u0447",
+        "phone": "344564575",
+        "company": 3,
+        "role": "UR",
+        "is_active": true,
+        "is_staff": false,
+        "date_joined": "2019-09-24T08:44:55Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]

@@ -1,0 +1,130 @@
+[
+{
+    "model": "folders.folders",
+    "pk": 1,
+    "fields": {
+        "name": "root_folder:admin@gmail.com",
+        "parent": null,
+        "owner": 1,
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 1,
+        "level": 0,
+        "access_user": [],
+        "documents": [],
+        "notes": []
+    }
+},
+{
+    "model": "folders.folders",
+    "pk": 2,
+    "fields": {
+        "name": "root_folder:email1@gmail.com",
+        "parent": null,
+        "owner": 2,
+        "lft": 1,
+        "rght": 10,
+        "tree_id": 2,
+        "level": 0,
+        "access_user": [],
+        "documents": [],
+        "notes": []
+    }
+},
+{
+    "model": "folders.folders",
+    "pk": 3,
+    "fields": {
+        "name": "root_folder:email2@gmail.com",
+        "parent": null,
+        "owner": 3,
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 3,
+        "level": 0,
+        "access_user": [],
+        "documents": [],
+        "notes": []
+    }
+},
+{
+    "model": "folders.folders",
+    "pk": 4,
+    "fields": {
+        "name": "root_folder:email3@gmail.com",
+        "parent": null,
+        "owner": 4,
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 4,
+        "level": 0,
+        "access_user": [],
+        "documents": [],
+        "notes": []
+    }
+},
+{
+    "model": "folders.folders",
+    "pk": 5,
+    "fields": {
+        "name": "\u043f\u043e\u0434\u043a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f_1",
+        "parent": 2,
+        "owner": 2,
+        "lft": 2,
+        "rght": 3,
+        "tree_id": 2,
+        "level": 1,
+        "access_user": [],
+        "documents": [],
+        "notes": []
+    }
+},
+{
+    "model": "folders.folders",
+    "pk": 6,
+    "fields": {
+        "name": "\u043f\u043e\u0434\u043a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f_2",
+        "parent": 2,
+        "owner": 2,
+        "lft": 4,
+        "rght": 9,
+        "tree_id": 2,
+        "level": 1,
+        "access_user": [],
+        "documents": [],
+        "notes": []
+    }
+},
+{
+    "model": "folders.folders",
+    "pk": 7,
+    "fields": {
+        "name": "\u043f\u043e\u0434\u043a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f_2_1",
+        "parent": 6,
+        "owner": 2,
+        "lft": 5,
+        "rght": 6,
+        "tree_id": 2,
+        "level": 2,
+        "access_user": [],
+        "documents": [],
+        "notes": []
+    }
+},
+{
+    "model": "folders.folders",
+    "pk": 8,
+    "fields": {
+        "name": "\u043f\u043e\u0434\u043a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f_2_2",
+        "parent": 6,
+        "owner": 2,
+        "lft": 7,
+        "rght": 8,
+        "tree_id": 2,
+        "level": 2,
+        "access_user": [],
+        "documents": [],
+        "notes": []
+    }
+}
+]

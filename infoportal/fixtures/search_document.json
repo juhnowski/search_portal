@@ -1,0 +1,1424 @@
+[
+  {
+    "model": "documents.ciscountries",
+    "pk": 1,
+    "fields": {
+      "name": "\u0410\u0437\u0435\u0440\u0431\u0430\u0439\u0434\u0436\u0430\u043d"
+    }
+  },
+  {
+    "model": "documents.ciscountries",
+    "pk": 2,
+    "fields": {
+      "name": "\u0410\u0440\u043c\u0435\u043d\u0438\u044f"
+    }
+  },
+  {
+    "model": "documents.codeokved",
+    "pk": 1,
+    "fields": {
+      "code": "28.3",
+      "title": "\u041f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0441\u0442\u0432\u043e \u043f\u0430\u0440\u043e\u0432\u044b\u0445 \u043a\u043e\u0442\u043b\u043e\u0432, \u043a\u0440\u043e\u043c\u0435 \u043a\u043e\u0442\u043b\u043e\u0432 \u0446\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u043e\u0442\u043e\u043f\u043b\u0435\u043d\u0438\u044f; \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0441\u0442\u0432\u043e \u044f\u0434\u0435\u0440\u043d\u044b\u0445 \u0440\u0435\u0430\u043a\u0442\u043e\u0440\u043e\u0432",
+      "description": "- \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0441\u0442\u0432\u043e \u043f\u0430\u0440\u043e\u0432\u044b\u0445 \u0438\u043b\u0438 \u043f\u0440\u043e\u0447\u0438\u0445 \u043f\u0430\u0440\u043e\u0433\u0435\u043d\u0435\u0440\u0438\u0440\u0443\u044e\u0449\u0438\u0445 \u043a\u043e\u0442\u043b\u043e\u0432 \u0438 \u043a\u043e\u0442\u043b\u043e\u0432, \u0440\u0430\u0431\u043e\u0442\u0430\u044e\u0449\u0438\u0445 \u043d\u0430                          \u043f\u0435\u0440\u0435\u0433\u0440\u0435\u0442\u043e\u0439 \u0432\u043e\u0434\u0435 &#xD;\r\n - \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0441\u0442\u0432\u043e \u0432\u0441\u043f\u043e\u043c\u043e\u0433\u0430\u0442\u0435\u043b\u044c\u043d\u044b\u0445 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043e\u043a \u0434\u043b\u044f \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d\u0438\u044f \u0432\u043c\u0435\u0441\u0442\u0435 \u0441 \u043f\u0430\u0440\u043e\u0432\u044b\u043c\u0438 \u043a\u043e\u0442\u043b\u0430\u043c\u0438:\r\n  \u043a\u043e\u043d\u0434\u0435\u043d\u0441\u0430\u0442\u043e\u0440\u043e\u0432, \u044d\u043a\u043e\u043d\u043e\u043c\u0430\u0439\u0437\u0435\u0440\u043e\u0432, \u043f\u0430\u0440\u043e\u043f\u0435\u0440\u0435\u0433\u0440\u0435\u0432\u0430\u0442\u0435\u043b\u0435\u0439, \u043f\u0430\u0440\u043e\u0441\u0431\u043e\u0440\u043d\u0438\u043a\u043e\u0432 \u0438 \u043f\u0430\u0440\u043e\u0432\u043e\u0434\u044f\u043d\u044b\u0445\r\n  \u0430\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440\u043e\u0432, \u043e\u0445\u043b\u0430\u0434\u0438\u0442\u0435\u043b\u0435\u0439, \u0433\u0430\u0437\u043e\u0432\u044b\u0445 \u0440\u0435\u043a\u0443\u043f\u0435\u0440\u0430\u0442\u043e\u0440\u043e\u0432 \u0438 \u0434\u0440. \u0432\u0441\u043f\u043e\u043c\u043e\u0433\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0433\u043e \u043e\u0431\u043e\u0440\u0443\u0434\u043e\u0432\u0430\u043d\u0438\u044f \u0434\u043b\u044f \r\n  \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d\u0438\u044f \u0441 \u043a\u043e\u0442\u043b\u0430\u043c\u0438 \u0438 \u0447\u0430\u0441\u0442\u0435\u0439 \u043f\u0430\u0440\u043e\u0432\u044b\u0445 \u043a\u043e\u0442\u043b\u043e\u0432"
+    }
+  },
+  {
+    "model": "documents.codeokved",
+    "pk": 2,
+    "fields": {
+      "code": "50.4",
+      "title": "\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u043c\u043e\u0442\u043e\u0446\u0438\u043a\u043b\u0430\u043c\u0438, \u0438\u0445 \u0434\u0435\u0442\u0430\u043b\u044f\u043c\u0438, \u0443\u0437\u043b\u0430\u043c\u0438 \u0438 \u043f\u0440\u0438\u043d\u0430\u0434\u043b\u0435\u0436\u043d\u043e\u0441\u0442\u044f\u043c\u0438; \u0442\u0435\u0445\u043d\u0438\u0447\u0435\u0441\u043a\u043e\u0435 \u043e\u0431\u0441\u043b\u0443\u0436\u0438\u0432\u0430\u043d\u0438\u0435 \u0438 \u0440\u0435\u043c\u043e\u043d\u0442 \u043c\u043e\u0442\u043e\u0446\u0438\u043a\u043b\u043e\u0432",
+      "description": "- \u0442\u043e\u0440\u0433\u043e\u0432\u043b\u044e \u043c\u043e\u0442\u043e\u0446\u0438\u043a\u043b\u0430\u043c\u0438, \u0432\u043a\u043b\u044e\u0447\u0430\u044f \u043c\u043e\u0442\u043e\u0440\u043e\u043b\u043b\u0435\u0440\u044b \u0438 \u043c\u043e\u043f\u0435\u0434\u044b, \u043a\u0430\u043a \u043d\u043e\u0432\u044b\u043c\u0438, \u0442\u0430\u043a \u0438 \u0431\u044b\u0432\u0448\u0438\u043c\u0438 \u0432 \u0443\u043f\u043e\u0442\u0440\u0435\u0431\u043b\u0435\u043d\u0438\u0438;\r\n- \u0442\u043e\u0440\u0433\u043e\u0432\u043b\u044e \u0434\u0435\u0442\u0430\u043b\u044f\u043c\u0438, \u0443\u0437\u043b\u0430\u043c\u0438 \u0438 \u043f\u0440\u0438\u043d\u0430\u0434\u043b\u0435\u0436\u043d\u043e\u0441\u0442\u044f\u043c\u0438 \u043c\u043e\u0442\u043e\u0446\u0438\u043a\u043b\u043e\u0432 \u043a\u0430\u043a \u043d\u043e\u0432\u044b\u043c\u0438, \u0442\u0430\u043a \u0438 \u0431\u044b\u0432\u0448\u0438\u043c\u0438 \u0432 \u0443\u043f\u043e\u0442\u0440\u0435\u0431\u043b\u0435\u043d\u0438\u0438;\r\n- \u0442\u0435\u0445\u043d\u0438\u0447\u0435\u0441\u043a\u043e\u0435 \u043e\u0431\u0441\u043b\u0443\u0436\u0438\u0432\u0430\u043d\u0438\u0435 \u0438 \u0440\u0435\u043c\u043e\u043d\u0442 \u043c\u043e\u0442\u043e\u0446\u0438\u043a\u043b\u043e\u0432;\r\n\u042d\u0442\u0430 \u0433\u0440\u0443\u043f\u043f\u0438\u0440\u043e\u0432\u043a\u0430 \u0442\u0430\u043a\u0436\u0435 \u0432\u043a\u043b\u044e\u0447\u0430\u0435\u0442:\r\n- \u0442\u043e\u0440\u0433\u043e\u0432\u043b\u044e \u0441\u043d\u0435\u0433\u043e\u0445\u043e\u0434\u0430\u043c\u0438, \u0438\u0445 \u0434\u0435\u0442\u0430\u043b\u044f\u043c\u0438, \u0443\u0437\u043b\u0430\u043c\u0438 \u0438 \u043f\u0440\u0438\u043d\u0430\u0434\u043b\u0435\u0436\u043d\u043e\u0441\u0442\u044f\u043c\u0438, \u0442\u0435\u0445\u043d\u0438\u0447\u0435\u0441\u043a\u043e\u0435 \u043e\u0431\u0441\u043b\u0443\u0436\u0438\u0432\u0430\u043d\u0438\u0435 \u0438 \u0440\u0435\u043c\u043e\u043d\u0442 \u0441\u043d\u0435\u0433\u043e\u0445\u043e\u0434\u043e\u0432;\r\n\u042d\u0442\u0430 \u0433\u0440\u0443\u043f\u043f\u0438\u0440\u043e\u0432\u043a\u0430 \u043d\u0435 \u0432\u043a\u043b\u044e\u0447\u0430\u0435\u0442:\r\n- \u0442\u043e\u0440\u0433\u043e\u0432\u043b\u044e \u0432\u0435\u043b\u043e\u0441\u0438\u043f\u0435\u0434\u0430\u043c\u0438, \u0438\u0445 \u0434\u0435\u0442\u0430\u043b\u044f\u043c\u0438, \u0443\u0437\u043b\u0430\u043c\u0438 \u0438 \u043f\u0440\u0438\u043d\u0430\u0434\u043b\u0435\u0436\u043d\u043e\u0441\u0442\u044f\u043c\u0438, \u0442\u0435\u0445\u043d\u0438\u0447\u0435\u0441\u043a\u043e\u0435 \u043e\u0431\u0441\u043b\u0443\u0436\u0438\u0432\u0430\u043d\u0438\u0435 \u0438 \u0440\u0435\u043c\u043e\u043d\u0442 \u0432\u0435\u043b\u043e\u0441\u0438\u043f\u0435\u0434\u043e\u0432, \u0441\u043c. 51.18.27, 51.47.35, 52.48.23, 52.74"
+    }
+  },
+  {
+    "model": "documents.codeoks",
+    "pk": 1,
+    "fields": {
+      "code": "21.120.30",
+      "title": "\u0428\u043f\u043e\u043d\u043a\u0438, \u0448\u043f\u043e\u043d\u043e\u0447\u043d\u044b\u0435 \u043a\u0430\u043d\u0430\u0432\u043a\u0438, \u0448\u043b\u0438\u0446\u044b"
+    }
+  },
+  {
+    "model": "documents.codeoks",
+    "pk": 2,
+    "fields": {
+      "code": "21.120.40",
+      "title": "\u0411\u0430\u043b\u0430\u043d\u0441\u0438\u0440\u043e\u0432\u043a\u0430 \u0438 \u0431\u0430\u043b\u0430\u043d\u0441\u0438\u0440\u043e\u0432\u043e\u0447\u043d\u044b\u0435 \u0441\u0442\u0430\u043d\u043a\u0438"
+    }
+  },
+  {
+    "model": "documents.codeokpd",
+    "pk": 1,
+    "fields": {
+      "code": "11.02.99.000",
+      "title": "\u0423\u0441\u043b\u0443\u0433\u0438 \u043f\u043e \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0441\u0442\u0432\u0443 \u0432\u0438\u043d\u043e\u0433\u0440\u0430\u0434\u043d\u044b\u0445 \u0432\u0438\u043d \u043e\u0442\u0434\u0435\u043b\u044c\u043d\u044b\u0435, \u0432\u044b\u043f\u043e\u043b\u043d\u044f\u0435\u043c\u044b\u0435 \u0441\u0443\u0431\u043f\u043e\u0434\u0440\u044f\u0434\u0447\u0438\u043a\u043e\u043c"
+    }
+  },
+  {
+    "model": "documents.codeokpd",
+    "pk": 2,
+    "fields": {
+      "code": "55.10.10.000",
+      "title": "\u0423\u0441\u043b\u0443\u0433\u0438 \u043f\u043e \u043f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u044e \u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e\u0433\u043e \u0436\u0438\u043b\u044c\u044f \u0434\u043b\u044f \u043f\u043e\u0441\u0435\u0442\u0438\u0442\u0435\u043b\u0435\u0439 \u0441 \u043e\u0431\u0435\u0441\u043f\u0435\u0447\u0435\u043d\u0438\u0435\u043c \u0435\u0436\u0435\u0434\u043d\u0435\u0432\u043d\u043e\u0439 \u0443\u0431\u043e\u0440\u043a\u0438 \u043d\u043e\u043c\u0435\u0440\u0430 (\u0437\u0430 \u0438\u0441\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435\u043c \u0443\u0441\u043b\u0443\u0433 \u043f\u043e \u043f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u044e \u043f\u043e\u043c\u0435\u0449\u0435\u043d\u0438\u0439 \u043f\u043e \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u0430\u043c \u043a\u0440\u0430\u0442\u043a\u043e\u0441\u0440\u043e\u0447\u043d\u043e\u0433\u043e \u043d\u0430\u0439\u043c\u0430)"
+    }
+  },
+  {
+    "model": "documents.originlanguage",
+    "pk": 1,
+    "fields": {
+      "language": "\u0410\u043d\u0433\u043b\u0438\u0439\u0441\u043a\u0438\u0439"
+    }
+  },
+  {
+    "model": "documents.originlanguage",
+    "pk": 2,
+    "fields": {
+      "language": "\u0420\u0443\u0441\u0441\u043a\u0438\u0439"
+    }
+  },
+  {
+    "model": "documents.documents",
+    "pk": 705,
+    "fields": {
+      "doc_kind": "ГОСТ",
+      "doc_mark": "\u041e\u0431\u043e\u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0435 1",
+      "doc_name_ru": "Акустика. Статистическое распределение порогов слышимости в зависимости от возраста человека",
+      "doc_name_en": "Acoustics. Statistical distribution of hearing thresholds as a function of age",
+      "doc_annotation": "Настоящий стандарт устанавливает статистические параметры порога слышимости для людей различного возраста. Для диапазона аудиометрических частот от 125 до 8000 Гц и людей с нормальным слухом в возрасте от 18 до 70 лет включительно устанавливаются:\\n   a) медианное значение порогов слышимости относительно медианного значения порога слышимости для возраста 18 лет;\\n   b) статистическое распределение выше и ниже медианного значения.\\n   Стандарт применим для оценивания числа случаев потери слуха, вызванных воздействием на людей вредного фактора. Оценка относится к случаю, когда обследуемая группа состоит из людей с нормальным слухом, подвергавшихся воздействию вредного фактора. Шум является примером такого вредного фактора, и для рассматриваемой области применения выборочные данные настоящего стандарта соответствуют «Базе данных А» ИСО 1999.\\n   Устанавливаемые стандартом величины могут также использоваться для оценки остроты слуха определенного человека по отношению к статистическому распределению порогов слышимости, которое является нормальным распределением для группы людей заданного возраста. Однако для какого-либо конкретного человека нельзя однозначно определить, какая часть наблюдаемой потери слуха обусловлена накапливаемыми вредными для слуха воздействиями, увеличивающимися с возрастом, и какая часть может быть вызвана другими факторами, например шумом",
+      "doc_comment": "",
+      "doc_sys_number": "3432",
+      "doc_full_mark": "\u041f\u043e\u043b\u043d\u043e\u0435 \u043e\u0431\u043e\u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0435 1",
+      "doc_status": "actual",
+      "application_status": "voluntary",
+      "doc_reg_date": "2019-03-10",
+      "doc_limit_date": "2020-03-10",
+      "doc_on_rf_use": null,
+      "classifier_pns": "2344",
+      "doc_assign_org": "2344",
+      "doc_assign_date": "2019-03-10",
+      "doc_reg_text": "234",
+      "doc_effective_date": "2019-03-10",
+      "doc_restoration_date": "2019-03-10",
+      "doc_enter_org": "1",
+      "tk_rus": "23",
+      "org_author_name": "1",
+      "mtk_dev": "1",
+      "keywords": "1",
+      "doc_annotation_ru": "1",
+      "contains_in_npa_links": true,
+      "cancel_in_part": "1",
+      "doc_o_zsh": "1",
+      "doc_o_zgo_vch": "1",
+      "doc_o_zgo": "1",
+      "doc_o_zsh_vch": "1",
+      "doc_supplemented": "1",
+      "doc_supplementing": "1",
+      "doc_outside_system": "1",
+      "doc_html_content": "qqq",
+      "doc_image_content": "qqq",
+      "image_contemt_name": "qqq",
+      "doc_pdf_content": "qqq",
+      "pdf_content_name": "qqq",
+      "doc_changes": "qqq",
+      "has_document_case": "qqq",
+      "classifier_enterd_countries": [
+        1,
+        2
+      ],
+      "classifier_okved": [
+        1
+      ],
+      "classifier_oks": [
+        1
+      ],
+      "classifier_okp": [
+        2
+      ],
+      "doc_origin_language": [
+        2
+      ],
+      "related_documents": []
+    }
+  },
+  {
+    "model": "documents.documents",
+    "pk": 865,
+    "fields": {
+      "doc_kind": "ГОСТ",
+      "doc_mark": "1",
+      "doc_name_ru": "Акустика. Стандартные кривые равной громкости",
+      "doc_name_en": "Acoustics-Normal equal-loudness-level contours",
+      "doc_annotation": "Настоящий стандарт устанавливает совокупности уровня звукового давления и частоты непрерывных чистых тонов, воспринимаемых испытуемыми равными по громкости. Устанавливаемые значения получены при следующих условиях:\n   а) звуковое поле при отсутствии испытуемого образовано свободно распространяющейся плоской волной;\n   b) источник звука находится прямо перед испытуемым;\n   c) звуковые сигналы являются чистыми тонами;\n   d) УЗД измеряют в точке расположения центра головы испытуемого, но при его отсутствии;\n   e) прослушивание является бинауральным;\n   f) испытуемыми являются люди с нормальным слухом в возрасте от 18 до 25 лет включительно.\n   В приложении А в графическом виде и в табличном приложении В приведены данные для третьоктавного ряда частот от 20 до 12500 Гц включительно в соответствии с ИСО 266",
+      "doc_comment": "",
+      "doc_sys_number": "3432",
+      "doc_full_mark": "\u041f\u043e\u043b\u043d\u043e\u0435 \u043e\u0431\u043e\u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0435 1",
+      "doc_status": "actual",
+      "application_status": "voluntary",
+      "doc_reg_date": "2019-03-10",
+      "doc_limit_date": "2020-03-10",
+      "doc_on_rf_use": null,
+      "classifier_pns": "2344",
+      "doc_assign_org": "2344",
+      "doc_assign_date": "2019-03-10",
+      "doc_reg_text": "234",
+      "doc_effective_date": "2019-03-10",
+      "doc_restoration_date": "2019-03-10",
+      "doc_enter_org": "1",
+      "tk_rus": "23",
+      "org_author_name": "1",
+      "mtk_dev": "1",
+      "keywords": "1",
+      "doc_annotation_ru": "1",
+      "contains_in_npa_links": true,
+      "cancel_in_part": "1",
+      "doc_o_zsh": "1",
+      "doc_o_zgo_vch": "1",
+      "doc_o_zgo": "1",
+      "doc_o_zsh_vch": "1",
+      "doc_supplemented": "1",
+      "doc_supplementing": "1",
+      "doc_outside_system": "1",
+      "doc_html_content": "qqq",
+      "doc_image_content": "qqq",
+      "image_contemt_name": "qqq",
+      "doc_pdf_content": "qqq",
+      "pdf_content_name": "qqq",
+      "doc_changes": "qqq",
+      "has_document_case": "qqq",
+      "classifier_enterd_countries": [
+        1,
+        2
+      ],
+      "classifier_okved": [
+        1
+      ],
+      "classifier_oks": [
+        1
+      ],
+      "classifier_okp": [
+        2
+      ],
+      "doc_origin_language": [
+        2
+      ],
+      "related_documents": []
+    }
+  },
+  {
+    "model": "documents.documents",
+    "pk": 420,
+    "fields": {
+      "doc_kind": "ГОСТ",
+      "doc_mark": "1",
+      "doc_name_ru": "Акустика. Определение уровней звуковой мощности и звуковой энергии источников шума по звуковому давлению. Ориентировочный метод с использованием измерительной поверхности над звукоотражающей плоскостью",
+      "doc_name_en": "Acoustics. Determination of sound power levels and sound energy levels of noise sources using sound pressure. Survey methods using an enveloping measurement surface over a reflecting plane",
+      "doc_annotation": "Настоящий стандарт устанавливает методы измерения уровней звуковой мощности источников шума (машин и оборудования) или, в случае, если шум источника импульсный или имеет форму переходного процесса, уровней звуковой энергии в полосах частот или в широкой полосе частот с коррекции по частотной характеристике А (далее - корректированные по А) по результатам измерений уровней звукового давления в точках на охватывающей источник шума измерительной поверхности в условиях испытаний, удовлетворяющих заданным требованиям.\n   Настоящий стандарт распространяется на все виды шума (постоянный, непостоянный, флуктуирующий, единичные импульсы и др.) по классификации ИСО 12001.\n   Настоящий стандарт распространяется на источники шума всех видов и размеров (например, стационарное или медленно перемещающееся технологическое оборудование, установки машины и их узлы), для которых может быть обеспечено  соблюдение требований настоящего стандарта к условиям испытаний.\nУсловия испытаний, соответствующие требованиям настоящего стандарта, могут быть созданы внутри помещений или на открытом воздухе и предполагают наличие одной или нескольких звукоотражающих плоскостей, на которые или вблизи которых устанавливают испытуемый источник шума.",
+      "doc_comment": "",
+      "doc_sys_number": "3432",
+      "doc_full_mark": "1",
+      "doc_status": "actual",
+      "application_status": "voluntary",
+      "doc_reg_date": "2019-03-10",
+      "doc_limit_date": "2020-03-10",
+      "doc_on_rf_use": null,
+      "classifier_pns": "2344",
+      "doc_assign_org": "2344",
+      "doc_assign_date": "2019-03-10",
+      "doc_reg_text": "234",
+      "doc_effective_date": "2019-03-10",
+      "doc_restoration_date": "2019-03-10",
+      "doc_enter_org": "1",
+      "tk_rus": "23",
+      "org_author_name": "1",
+      "mtk_dev": "1",
+      "keywords": "1",
+      "doc_annotation_ru": "1",
+      "contains_in_npa_links": true,
+      "cancel_in_part": "1",
+      "doc_o_zsh": "1",
+      "doc_o_zgo_vch": "1",
+      "doc_o_zgo": "1",
+      "doc_o_zsh_vch": "1",
+      "doc_supplemented": "1",
+      "doc_supplementing": "1",
+      "doc_outside_system": "1",
+      "doc_html_content": "qqq",
+      "doc_image_content": "qqq",
+      "image_contemt_name": "qqq",
+      "doc_pdf_content": "qqq",
+      "pdf_content_name": "qqq",
+      "doc_changes": "qqq",
+      "has_document_case": "qqq",
+      "classifier_enterd_countries": [
+        1,
+        2
+      ],
+      "classifier_okved": [
+        1
+      ],
+      "classifier_oks": [
+        1
+      ],
+      "classifier_okp": [
+        2
+      ],
+      "doc_origin_language": [
+        2
+      ],
+      "related_documents": []
+    }
+  },
+  {
+    "model": "documents.documents",
+    "pk": 423,
+    "fields": {
+      "doc_kind": "ГОСТ",
+      "doc_mark": "1",
+      "doc_name_ru": "Акустика. Лабораторные измерения звукоизоляции элементов зданий. Часть 5. Требования к испытательным установкам и оборудованию",
+      "doc_name_en": "Acoustics. Laboratory measurement of sound insulation of building elements. Part 5. Requirements for test facilities and equipment",
+      "doc_annotation": "Настоящий стандарт устанавливает требования к лабораторным испытательным установкам и оборудованию для измерений звукоизоляции элементов зданий, таких как:\n   - компоненты и материалы;\n   - строительные конструкции;\n   - элементы оборудования зданий (малые технические элементы);\n   - системы улучшения звукоизоляции.\n   Стандарт применим к лабораторным испытательным установкам, в которых приняты меры для ослабления побочной звукопередачи и помещение источника конструктивно изолировано от приемного помещения.\n   Настоящий стандарт устанавливает методы аттестации новых испытательных установок при их введении в эксплуатацию. Аттестация должна периодически повторяться, чтобы гарантировать соответствие оборудования и испытательных установок установленным требованиям",
+      "doc_comment": "",
+      "doc_sys_number": "3432",
+      "doc_full_mark": "1",
+      "doc_status": "actual",
+      "application_status": "voluntary",
+      "doc_reg_date": "2019-03-10",
+      "doc_limit_date": "2020-03-10",
+      "doc_on_rf_use": null,
+      "classifier_pns": "2344",
+      "doc_assign_org": "2344",
+      "doc_assign_date": "2019-03-10",
+      "doc_reg_text": "234",
+      "doc_effective_date": "2019-03-10",
+      "doc_restoration_date": "2019-03-10",
+      "doc_enter_org": "1",
+      "tk_rus": "23",
+      "org_author_name": "1",
+      "mtk_dev": "1",
+      "keywords": "1",
+      "doc_annotation_ru": "1",
+      "contains_in_npa_links": true,
+      "cancel_in_part": "1",
+      "doc_o_zsh": "1",
+      "doc_o_zgo_vch": "1",
+      "doc_o_zgo": "1",
+      "doc_o_zsh_vch": "1",
+      "doc_supplemented": "1",
+      "doc_supplementing": "1",
+      "doc_outside_system": "1",
+      "doc_html_content": "qqq",
+      "doc_image_content": "qqq",
+      "image_contemt_name": "qqq",
+      "doc_pdf_content": "qqq",
+      "pdf_content_name": "qqq",
+      "doc_changes": "qqq",
+      "has_document_case": "qqq",
+      "classifier_enterd_countries": [
+        1,
+        2
+      ],
+      "classifier_okved": [
+        1
+      ],
+      "classifier_oks": [
+        1
+      ],
+      "classifier_okp": [
+        2
+      ],
+      "doc_origin_language": [
+        2
+      ],
+      "related_documents": []
+    }
+  },
+  {
+    "model": "documents.documents",
+    "pk": 777,
+    "fields": {
+      "doc_kind": "ГОСТ",
+      "doc_mark": "1",
+      "doc_name_ru": "Государственная система обеспечения единства измерений. Акустика. Опорный нуль для калибровки аудиометрической аппаратуры. Часть 6. Опорный порог слышимости тестовых сигналов малой длительности",
+      "doc_name_en": "State system for ensuring the uniformity of measurements. Acoustics. Reference zero for the calibration of audiometric equipment. Part 6. Reference threshold of hearing for test signals of short duration",
+      "doc_annotation": "Настоящий стандарт устанавливает опорные пороговые уровни прослушивания для тестовых сигналов малой длительности, применяемых для калибровки аудиометрического оборудования, в котором такие сигналы используются",
+      "doc_comment": "",
+      "doc_sys_number": "3432",
+      "doc_full_mark": "1",
+      "doc_status": "actual",
+      "application_status": "voluntary",
+      "doc_reg_date": "2019-03-10",
+      "doc_limit_date": "2020-03-10",
+      "doc_on_rf_use": null,
+      "classifier_pns": "2344",
+      "doc_assign_org": "2344",
+      "doc_assign_date": "2019-03-10",
+      "doc_reg_text": "234",
+      "doc_effective_date": "2019-03-10",
+      "doc_restoration_date": "2019-03-10",
+      "doc_enter_org": "1",
+      "tk_rus": "23",
+      "org_author_name": "1",
+      "mtk_dev": "1",
+      "keywords": "1",
+      "doc_annotation_ru": "1",
+      "contains_in_npa_links": true,
+      "cancel_in_part": "1",
+      "doc_o_zsh": "1",
+      "doc_o_zgo_vch": "1",
+      "doc_o_zgo": "1",
+      "doc_o_zsh_vch": "1",
+      "doc_supplemented": "1",
+      "doc_supplementing": "1",
+      "doc_outside_system": "1",
+      "doc_html_content": "qqq",
+      "doc_image_content": "qqq",
+      "image_contemt_name": "qqq",
+      "doc_pdf_content": "qqq",
+      "pdf_content_name": "qqq",
+      "doc_changes": "qqq",
+      "has_document_case": "qqq",
+      "classifier_enterd_countries": [
+        1,
+        2
+      ],
+      "classifier_okved": [
+        1
+      ],
+      "classifier_oks": [
+        1
+      ],
+      "classifier_okp": [
+        2
+      ],
+      "doc_origin_language": [
+        2
+      ],
+      "related_documents": []
+    }
+  },
+  {
+    "model": "documents.documents",
+    "pk": 906,
+    "fields": {
+      "doc_kind": "ГОСТ",
+      "doc_mark": "1",
+      "doc_name_ru": "Акустика. Методы аудиометрических испытаний. Часть 1. Тональная пороговая аудиометрия по воздушной и костной проводимости",
+      "doc_name_en": "Acoustics. Audiometric test methods. Part 1. Pure-tone air and bone conduction audiometry",
+      "doc_annotation": "Настоящий стандарт устанавливает методы тональных пороговых аудиометрических испытаний по воздушной и костной проводимости. В методах испытаний, проводимых с целью массового обследования населения (скрининговая аудиометрия), рассматривается только воздушная проводимость. Установленные методы могут быть неприменимы для отдельных групп населения, например для маленьких детей.\n   Настоящий стандарт не распространяется на методы надпороговой аудиометрии.\n   Настоящий стандарт не распространяется также на методы речевой и электрофизиологической аудиометрии, а также на испытания, в которых в качестве источника звука используют громкоговорители",
+      "doc_comment": "",
+      "doc_sys_number": "3432",
+      "doc_full_mark": "1",
+      "doc_status": "actual",
+      "application_status": "voluntary",
+      "doc_reg_date": "2019-03-10",
+      "doc_limit_date": "2020-03-10",
+      "doc_on_rf_use": null,
+      "classifier_pns": "2344",
+      "doc_assign_org": "2344",
+      "doc_assign_date": "2019-03-10",
+      "doc_reg_text": "234",
+      "doc_effective_date": "2019-03-10",
+      "doc_restoration_date": "2019-03-10",
+      "doc_enter_org": "1",
+      "tk_rus": "23",
+      "org_author_name": "1",
+      "mtk_dev": "1",
+      "keywords": "1",
+      "doc_annotation_ru": "1",
+      "contains_in_npa_links": true,
+      "cancel_in_part": "1",
+      "doc_o_zsh": "1",
+      "doc_o_zgo_vch": "1",
+      "doc_o_zgo": "1",
+      "doc_o_zsh_vch": "1",
+      "doc_supplemented": "1",
+      "doc_supplementing": "1",
+      "doc_outside_system": "1",
+      "doc_html_content": "qqq",
+      "doc_image_content": "qqq",
+      "image_contemt_name": "qqq",
+      "doc_pdf_content": "qqq",
+      "pdf_content_name": "qqq",
+      "doc_changes": "qqq",
+      "has_document_case": "qqq",
+      "classifier_enterd_countries": [
+        1,
+        2
+      ],
+      "classifier_okved": [
+        1
+      ],
+      "classifier_oks": [
+        1
+      ],
+      "classifier_okp": [
+        2
+      ],
+      "doc_origin_language": [
+        2
+      ],
+      "related_documents": []
+    }
+  },
+  {
+    "model": "documents.documents",
+    "pk": 747,
+    "fields": {
+      "doc_kind": "ГОСТ",
+      "doc_mark": "1",
+      "doc_name_ru": "Акустика. Методы аудиометрических испытаний. Часть 2. Аудиометрия в звуковом поле с использованием чистых тонов и узкополосных испытательных сигналов",
+      "doc_name_en": "Acoustics. Audiometric test methods. Part 2. Sound field audiometry with pure-tone and narrow-band test signals",
+      "doc_annotation": "Настоящий стандарт устанавливает характеристики испытательных сигналов, требования к свободному, диффузному и квазисвободному звуковым полям и методы аудиометрии в звуковом поле с использованием тональных сигналов, тональных сигналов с частотной модуляцией и других узкополосных тестовых сигналов, предъявляемых посредством одного или нескольких громкоговорителей. Эти методы предназначены, в первую очередь, для определения пороговых уровней прослушивания в диапазоне частот от 125 до 8000 Гц, но могут быть использованы и в более широком диапазоне от 20 до 16000 Гц.\n   Настоящий стандарт не распространяется на испытания с применением ручных громкоговорителей, а также на испытания с использованием речи в качестве тестового сигнала",
+      "doc_comment": "",
+      "doc_sys_number": "3432",
+      "doc_full_mark": "1",
+      "doc_status": "actual",
+      "application_status": "voluntary",
+      "doc_reg_date": "2019-03-10",
+      "doc_limit_date": "2020-03-10",
+      "doc_on_rf_use": null,
+      "classifier_pns": "2344",
+      "doc_assign_org": "2344",
+      "doc_assign_date": "2019-03-10",
+      "doc_reg_text": "234",
+      "doc_effective_date": "2019-03-10",
+      "doc_restoration_date": "2019-03-10",
+      "doc_enter_org": "1",
+      "tk_rus": "23",
+      "org_author_name": "1",
+      "mtk_dev": "1",
+      "keywords": "1",
+      "doc_annotation_ru": "1",
+      "contains_in_npa_links": true,
+      "cancel_in_part": "1",
+      "doc_o_zsh": "1",
+      "doc_o_zgo_vch": "1",
+      "doc_o_zgo": "1",
+      "doc_o_zsh_vch": "1",
+      "doc_supplemented": "1",
+      "doc_supplementing": "1",
+      "doc_outside_system": "1",
+      "doc_html_content": "qqq",
+      "doc_image_content": "qqq",
+      "image_contemt_name": "qqq",
+      "doc_pdf_content": "qqq",
+      "pdf_content_name": "qqq",
+      "doc_changes": "qqq",
+      "has_document_case": "qqq",
+      "classifier_enterd_countries": [
+        1,
+        2
+      ],
+      "classifier_okved": [
+        1
+      ],
+      "classifier_oks": [
+        1
+      ],
+      "classifier_okp": [
+        2
+      ],
+      "doc_origin_language": [
+        2
+      ],
+      "related_documents": []
+    }
+  },
+  {
+    "model": "documents.documents",
+    "pk": 1006,
+    "fields": {
+      "doc_kind": "ГОСТ",
+      "doc_mark": "1",
+      "doc_name_ru": "Акустика. Определение шумовых характеристик воздухораспределительного оборудования. Точные методы для заглушенных камер",
+      "doc_name_en": "Acoustics. Determination of noise performance for air-terminal devices. Precision methods for anechoic rooms",
+      "doc_annotation": "Настоящий стандарт устанавливает общие правила акустических испытаний воздухораспределителей, регуляторов расхода воздуха, устройств контроля расхода воздуха, задвижек и клапанов в системах подачи и распределения воздуха, определенных в ГОСТ 22270, с целью определения уровня звуковой мощности потокового шума и показателя направленности в заглушенной камере со звукоотражающим полом согласно ГОСТ 31252.",
+      "doc_comment": "",
+      "doc_sys_number": "3432",
+      "doc_full_mark": "1",
+      "doc_status": "actual",
+      "application_status": "voluntary",
+      "doc_reg_date": "2019-03-10",
+      "doc_limit_date": "2020-03-10",
+      "doc_on_rf_use": null,
+      "classifier_pns": "2344",
+      "doc_assign_org": "2344",
+      "doc_assign_date": "2019-03-10",
+      "doc_reg_text": "234",
+      "doc_effective_date": "2019-03-10",
+      "doc_restoration_date": "2019-03-10",
+      "doc_enter_org": "1",
+      "tk_rus": "23",
+      "org_author_name": "1",
+      "mtk_dev": "1",
+      "keywords": "1",
+      "doc_annotation_ru": "1",
+      "contains_in_npa_links": true,
+      "cancel_in_part": "1",
+      "doc_o_zsh": "1",
+      "doc_o_zgo_vch": "1",
+      "doc_o_zgo": "1",
+      "doc_o_zsh_vch": "1",
+      "doc_supplemented": "1",
+      "doc_supplementing": "1",
+      "doc_outside_system": "1",
+      "doc_html_content": "qqq",
+      "doc_image_content": "qqq",
+      "image_contemt_name": "qqq",
+      "doc_pdf_content": "qqq",
+      "pdf_content_name": "qqq",
+      "doc_changes": "qqq",
+      "has_document_case": "qqq",
+      "classifier_enterd_countries": [
+        1,
+        2
+      ],
+      "classifier_okved": [
+        1
+      ],
+      "classifier_oks": [
+        1
+      ],
+      "classifier_okp": [
+        2
+      ],
+      "doc_origin_language": [
+        2
+      ],
+      "related_documents": []
+    }
+  },
+  {
+    "model": "documents.documents",
+    "pk": 272,
+    "fields": {
+      "doc_kind": "ГОСТ",
+      "doc_mark": "1",
+      "doc_name_ru": "Государственная система обеспечения единства измерений. Акустика. Опорный нуль для калибровки аудиометрической аппаратуры. Часть 1. Опорные эквивалентные пороговые уровни звукового давления чистых тонов для прижимных телефонов",
+      "doc_name_en": "State system for ensuring the uniformity of measurements. Acoustics. Reference zero for the calibration of audiometric equipment. Part 1. Reference equivalent threshold sound pressure levels of pure tones for supra-aural earphones",
+      "doc_annotation": "Настоящий стандарт устанавливает стандартный опорный нуль шкалы порогового уровня прослушивания для аудиометров чистого тона при воздушном звукопроведении с целью достижения сопоставимого и единообразного выполнения измерений уровней порога слышимости.\n   Стандарт регламентирует представление данных при калибровке аудиометров в виде отклика двух стандартных моделей телефонов, испытываемых с помощью акустической камеры связи по МЭК 60318-3, и в виде отклика других моделей прижимных телефонов, и испытываемых с помощью прибора «искусственное ухо» по МЭК 60318-1.\n   Настоящий стандарт основан на данных, предоставленных испытательными лабораториями, отвечающими за аудиометрические стандарты, и на научных публикациях о соответствующих исследованиях",
+      "doc_comment": "",
+      "doc_sys_number": "3432",
+      "doc_full_mark": "1",
+      "doc_status": "actual",
+      "application_status": "voluntary",
+      "doc_reg_date": "2019-03-10",
+      "doc_limit_date": "2020-03-10",
+      "doc_on_rf_use": null,
+      "classifier_pns": "2344",
+      "doc_assign_org": "2344",
+      "doc_assign_date": "2019-03-10",
+      "doc_reg_text": "234",
+      "doc_effective_date": "2019-03-10",
+      "doc_restoration_date": "2019-03-10",
+      "doc_enter_org": "1",
+      "tk_rus": "23",
+      "org_author_name": "1",
+      "mtk_dev": "1",
+      "keywords": "1",
+      "doc_annotation_ru": "1",
+      "contains_in_npa_links": true,
+      "cancel_in_part": "1",
+      "doc_o_zsh": "1",
+      "doc_o_zgo_vch": "1",
+      "doc_o_zgo": "1",
+      "doc_o_zsh_vch": "1",
+      "doc_supplemented": "1",
+      "doc_supplementing": "1",
+      "doc_outside_system": "1",
+      "doc_html_content": "qqq",
+      "doc_image_content": "qqq",
+      "image_contemt_name": "qqq",
+      "doc_pdf_content": "qqq",
+      "pdf_content_name": "qqq",
+      "doc_changes": "qqq",
+      "has_document_case": "qqq",
+      "classifier_enterd_countries": [
+        1,
+        2
+      ],
+      "classifier_okved": [
+        1
+      ],
+      "classifier_oks": [
+        1
+      ],
+      "classifier_okp": [
+        2
+      ],
+      "doc_origin_language": [
+        2
+      ],
+      "related_documents": []
+    }
+  },
+  {
+    "model": "documents.documents",
+    "pk": 977,
+    "fields": {
+      "doc_kind": "ГОСТ",
+      "doc_mark": "1",
+      "doc_name_ru": "Акустика. Измерение шума инженерного оборудования в зданиях техническим методом",
+      "doc_name_en": "Acoustics. Measurement of sound pressure level from service equipment in buildings by engineering method",
+      "doc_annotation": "Настоящий стандарт устанавливает методы измерения уровня звукового давления инженерного оборудования в зданиях и строительных сооружениях. Стандарт распространяется на санитарно-техническое оборудование, оборудование для вентиляции, отопления и охлаждения, лифты, мусоропроводы, котлы, вентиляторы, насосы и другое вспомогательное оборудование, а также приводы дверей автомобильных парковок. Стандарт может быть применен к другим видам оборудования, временно или постоянно установленного в зданиях",
+      "doc_comment": "",
+      "doc_sys_number": "3432",
+      "doc_full_mark": "1",
+      "doc_status": "actual",
+      "application_status": "voluntary",
+      "doc_reg_date": "2019-03-10",
+      "doc_limit_date": "2020-03-10",
+      "doc_on_rf_use": null,
+      "classifier_pns": "2344",
+      "doc_assign_org": "2344",
+      "doc_assign_date": "2019-03-10",
+      "doc_reg_text": "234",
+      "doc_effective_date": "2019-03-10",
+      "doc_restoration_date": "2019-03-10",
+      "doc_enter_org": "1",
+      "tk_rus": "23",
+      "org_author_name": "1",
+      "mtk_dev": "1",
+      "keywords": "1",
+      "doc_annotation_ru": "1",
+      "contains_in_npa_links": true,
+      "cancel_in_part": "1",
+      "doc_o_zsh": "1",
+      "doc_o_zgo_vch": "1",
+      "doc_o_zgo": "1",
+      "doc_o_zsh_vch": "1",
+      "doc_supplemented": "1",
+      "doc_supplementing": "1",
+      "doc_outside_system": "1",
+      "doc_html_content": "qqq",
+      "doc_image_content": "qqq",
+      "image_contemt_name": "qqq",
+      "doc_pdf_content": "qqq",
+      "pdf_content_name": "qqq",
+      "doc_changes": "qqq",
+      "has_document_case": "qqq",
+      "classifier_enterd_countries": [
+        1,
+        2
+      ],
+      "classifier_okved": [
+        1
+      ],
+      "classifier_oks": [
+        1
+      ],
+      "classifier_okp": [
+        2
+      ],
+      "doc_origin_language": [
+        2
+      ],
+      "related_documents": []
+    }
+  },
+  {
+    "model": "documents.documents",
+    "pk": 659,
+    "fields": {
+      "doc_kind": "ГОСТ",
+      "doc_mark": "1",
+      "doc_name_ru": "Государственная система обеспечения единства измерений. Акустика. Опорный нуль для калибровки аудиометрической аппаратуры. Часть 2. Опорные эквивалентные пороговые уровни звукового давления чистых тонов для вставных телефонов",
+      "doc_name_en": "State system for ensuring the uniformity of measurements. Acoustics. Reference zero for the calibration of audiometric equipment. Part 2. Reference equivalent threshold sound pressure levels of pure tones for insert earphones",
+      "doc_annotation": "Настоящий стандарт устанавливает опорные эквивалентные пороговые уровни звукового давления (ЭПЗ) для калибровки аудиометров чистого тона дополнительно к уровням, установленным ИСО 389-1. Уровни по настоящему стандарту применяют к вставным телефонам",
+      "doc_comment": "",
+      "doc_sys_number": "3432",
+      "doc_full_mark": "1",
+      "doc_status": "actual",
+      "application_status": "voluntary",
+      "doc_reg_date": "2019-03-10",
+      "doc_limit_date": "2020-03-10",
+      "doc_on_rf_use": null,
+      "classifier_pns": "2344",
+      "doc_assign_org": "2344",
+      "doc_assign_date": "2019-03-10",
+      "doc_reg_text": "234",
+      "doc_effective_date": "2019-03-10",
+      "doc_restoration_date": "2019-03-10",
+      "doc_enter_org": "1",
+      "tk_rus": "23",
+      "org_author_name": "1",
+      "mtk_dev": "1",
+      "keywords": "1",
+      "doc_annotation_ru": "1",
+      "contains_in_npa_links": true,
+      "cancel_in_part": "1",
+      "doc_o_zsh": "1",
+      "doc_o_zgo_vch": "1",
+      "doc_o_zgo": "1",
+      "doc_o_zsh_vch": "1",
+      "doc_supplemented": "1",
+      "doc_supplementing": "1",
+      "doc_outside_system": "1",
+      "doc_html_content": "qqq",
+      "doc_image_content": "qqq",
+      "image_contemt_name": "qqq",
+      "doc_pdf_content": "qqq",
+      "pdf_content_name": "qqq",
+      "doc_changes": "qqq",
+      "has_document_case": "qqq",
+      "classifier_enterd_countries": [
+        1,
+        2
+      ],
+      "classifier_okved": [
+        1
+      ],
+      "classifier_oks": [
+        1
+      ],
+      "classifier_okp": [
+        2
+      ],
+      "doc_origin_language": [
+        2
+      ],
+      "related_documents": []
+    }
+  },
+  {
+    "model": "documents.documents",
+    "pk": 1012,
+    "fields": {
+      "doc_kind": "ГОСТ",
+      "doc_mark": "1",
+      "doc_name_ru": "Акустика. Методы измерения акустических характеристик слуховых аппаратов на ухе человека",
+      "doc_name_en": "Acoustics. Procedures for the measurement of real-ear acoustical characteristics of hearing aids",
+      "doc_annotation": "Настоящий стандарт определяет методы и требования при измерении акустических характеристик слуховых аппаратов на ухе человека. Его цель состоит в обеспечении сопоставимости результатов измерений, проведенных на ухе человека, при использовании методов и оборудования в строгом соответствии с требованиями МЭК 61669.\\n   Измерения акустических характеристик слуховых аппаратов на ухе с применением нелинейных или аналитических устройств возможны только для испытательных сигналов при определенных условиях. Эти измерения должны быть выполнены в соответствии с рекомендациями изготовителя слухового аппарата, поскольку они могут требовать специфических сигналов и условий испытаний, не удовлетворяющих требованиям настоящего стандарта",
+      "doc_comment": "",
+      "doc_sys_number": "3432",
+      "doc_full_mark": "1",
+      "doc_status": "actual",
+      "application_status": "voluntary",
+      "doc_reg_date": "2019-03-10",
+      "doc_limit_date": "2020-03-10",
+      "doc_on_rf_use": null,
+      "classifier_pns": "2344",
+      "doc_assign_org": "2344",
+      "doc_assign_date": "2019-03-10",
+      "doc_reg_text": "234",
+      "doc_effective_date": "2019-03-10",
+      "doc_restoration_date": "2019-03-10",
+      "doc_enter_org": "1",
+      "tk_rus": "23",
+      "org_author_name": "1",
+      "mtk_dev": "1",
+      "keywords": "1",
+      "doc_annotation_ru": "1",
+      "contains_in_npa_links": true,
+      "cancel_in_part": "1",
+      "doc_o_zsh": "1",
+      "doc_o_zgo_vch": "1",
+      "doc_o_zgo": "1",
+      "doc_o_zsh_vch": "1",
+      "doc_supplemented": "1",
+      "doc_supplementing": "1",
+      "doc_outside_system": "1",
+      "doc_html_content": "qqq",
+      "doc_image_content": "qqq",
+      "image_contemt_name": "qqq",
+      "doc_pdf_content": "qqq",
+      "pdf_content_name": "qqq",
+      "doc_changes": "qqq",
+      "has_document_case": "qqq",
+      "classifier_enterd_countries": [
+        1,
+        2
+      ],
+      "classifier_okved": [
+        1
+      ],
+      "classifier_oks": [
+        1
+      ],
+      "classifier_okp": [
+        2
+      ],
+      "doc_origin_language": [
+        2
+      ],
+      "related_documents": []
+    }
+  },
+  {
+    "model": "documents.documents",
+    "pk": 501,
+    "fields": {
+      "doc_kind": "ГОСТ",
+      "doc_mark": "1",
+      "doc_name_ru": "Государственная система обеспечения единства измерений. Акустика. Опорный нуль для калибровки аудиометрической аппаратуры. Часть 4. Опорные уровни узкополосного маскирующего шума",
+      "doc_name_en": "State system for ensuring the uniformity of measurements. Acoustics. Reference zero for the calibration of audiometric equipment. Part 4. Reference levels for narrow-band masking noise",
+      "doc_annotation": "Настоящий стандарт устанавливает опорные уровни узкополосного маскирующего шума, создаваемого телефоном при тональной аудиометрии при воздушном звукопроведении. Данные величины приведены в виде уровней, прибавляемых к опорным эквивалентным пороговым уровням звукового давления чистых тонов для соответствующих частот, регламентированных ИСО 389-1 или ИСО 389-2, при установке маскирующего телефона на акустическую камеру связи, имитатор уха или «искусственное ухо».\\n   Ширина полосы шума приведена кратной одной третьей части и половине октавы",
+      "doc_comment": "",
+      "doc_sys_number": "3432",
+      "doc_full_mark": "1",
+      "doc_status": "actual",
+      "application_status": "voluntary",
+      "doc_reg_date": "2019-03-10",
+      "doc_limit_date": "2020-03-10",
+      "doc_on_rf_use": null,
+      "classifier_pns": "2344",
+      "doc_assign_org": "2344",
+      "doc_assign_date": "2019-03-10",
+      "doc_reg_text": "234",
+      "doc_effective_date": "2019-03-10",
+      "doc_restoration_date": "2019-03-10",
+      "doc_enter_org": "1",
+      "tk_rus": "23",
+      "org_author_name": "1",
+      "mtk_dev": "1",
+      "keywords": "1",
+      "doc_annotation_ru": "1",
+      "contains_in_npa_links": true,
+      "cancel_in_part": "1",
+      "doc_o_zsh": "1",
+      "doc_o_zgo_vch": "1",
+      "doc_o_zgo": "1",
+      "doc_o_zsh_vch": "1",
+      "doc_supplemented": "1",
+      "doc_supplementing": "1",
+      "doc_outside_system": "1",
+      "doc_html_content": "qqq",
+      "doc_image_content": "qqq",
+      "image_contemt_name": "qqq",
+      "doc_pdf_content": "qqq",
+      "pdf_content_name": "qqq",
+      "doc_changes": "qqq",
+      "has_document_case": "qqq",
+      "classifier_enterd_countries": [
+        1,
+        2
+      ],
+      "classifier_okved": [
+        1
+      ],
+      "classifier_oks": [
+        1
+      ],
+      "classifier_okp": [
+        2
+      ],
+      "doc_origin_language": [
+        2
+      ],
+      "related_documents": []
+    }
+  },
+  {
+    "model": "documents.documents",
+    "pk": 344,
+    "fields": {
+      "doc_kind": "ГОСТ",
+      "doc_mark": "1",
+      "doc_name_ru": "Государственная система обеспечения единства измерений. Акустика. Опорный нуль для калибровки аудиометрической аппаратуры. Часть 5. Опорные эквивалентные пороговые уровни звукового давления чистых тонов в диапазоне частот от 8 до 16 кГц,",
+      "doc_name_en": "State system for ensuring the uniformity of measurements. Acoustics. Reference zero for the calibration of audiometric equipment. Part 5. Equivalent threshold sound pressure levels for pure tones in the frequency range 8 kHz to 16 kHz",
+      "doc_annotation": "Настоящий стандарт устанавливает опорные эквивалентные пороговые уровни звукового давления (ЭПЗ) чистых тонов в частотном диапазоне от 8 до 16 кГц применяемые для калибровки аудиометров с телефонами установленного типа при воздушном звукопроведении",
+      "doc_comment": "",
+      "doc_sys_number": "3432",
+      "doc_full_mark": "1",
+      "doc_status": "actual",
+      "application_status": "voluntary",
+      "doc_reg_date": "2019-03-10",
+      "doc_limit_date": "2020-03-10",
+      "doc_on_rf_use": null,
+      "classifier_pns": "2344",
+      "doc_assign_org": "2344",
+      "doc_assign_date": "2019-03-10",
+      "doc_reg_text": "234",
+      "doc_effective_date": "2019-03-10",
+      "doc_restoration_date": "2019-03-10",
+      "doc_enter_org": "1",
+      "tk_rus": "23",
+      "org_author_name": "1",
+      "mtk_dev": "1",
+      "keywords": "1",
+      "doc_annotation_ru": "1",
+      "contains_in_npa_links": true,
+      "cancel_in_part": "1",
+      "doc_o_zsh": "1",
+      "doc_o_zgo_vch": "1",
+      "doc_o_zgo": "1",
+      "doc_o_zsh_vch": "1",
+      "doc_supplemented": "1",
+      "doc_supplementing": "1",
+      "doc_outside_system": "1",
+      "doc_html_content": "qqq",
+      "doc_image_content": "qqq",
+      "image_contemt_name": "qqq",
+      "doc_pdf_content": "qqq",
+      "pdf_content_name": "qqq",
+      "doc_changes": "qqq",
+      "has_document_case": "qqq",
+      "classifier_enterd_countries": [
+        1,
+        2
+      ],
+      "classifier_okved": [
+        1
+      ],
+      "classifier_oks": [
+        1
+      ],
+      "classifier_okp": [
+        2
+      ],
+      "doc_origin_language": [
+        2
+      ],
+      "related_documents": []
+    }
+  },
+  {
+    "model": "documents.documents",
+    "pk": 861,
+    "fields": {
+      "doc_kind": "ГОСТ",
+      "doc_mark": "1",
+      "doc_name_ru": "Государственная система обеспечения единства измерений. Акустика. Опорный нуль для калибровки аудиометрической аппаратуры. Часть 3. Опорные эквивалентные пороговые уровни силы костных вибраторов для чистых тонов",
+      "doc_name_en": "State system for ensuring the uniformity of measurements. Acoustics. Reference zero for the calibration of audiometric equipment. Part 3. Reference equivalent threshold sound pressure levels of bone vibrators for pure tones",
+      "doc_annotation": "Настоящий стандарт устанавливает следующие величины, применяемые при калибровке костных вибраторов для тональной аудиометрии костного звукопроведения:\\n   a) опорные эквивалентные пороговые уровни переменной силы (ЭПС), соответствующие порогу слышимости молодых людей с нормальным слухом при аудиометрии костного звукопроведения. ЭПС есть уровень вибрационной силы, передаваемой вибратором искусственному мастоиду с заданными характеристиками при определенных условиях испытаний и напряжении возбуждения, соответствующем стандартному порогу слышимости в точке сосцевидного отростка (мастоида);\\n   b) требования к техническим характеристикам костного вибратора и методика  его применения при работе с человеком и искусственным мастоидом.\\n   с) характеристики и заданный уровень маскируемого шума, подаваемого на ухо, не участвующее в испытании",
+      "doc_comment": "",
+      "doc_sys_number": "3432",
+      "doc_full_mark": "1",
+      "doc_status": "actual",
+      "application_status": "voluntary",
+      "doc_reg_date": "2019-03-10",
+      "doc_limit_date": "2020-03-10",
+      "doc_on_rf_use": null,
+      "classifier_pns": "2344",
+      "doc_assign_org": "2344",
+      "doc_assign_date": "2019-03-10",
+      "doc_reg_text": "234",
+      "doc_effective_date": "2019-03-10",
+      "doc_restoration_date": "2019-03-10",
+      "doc_enter_org": "1",
+      "tk_rus": "23",
+      "org_author_name": "1",
+      "mtk_dev": "1",
+      "keywords": "1",
+      "doc_annotation_ru": "1",
+      "contains_in_npa_links": true,
+      "cancel_in_part": "1",
+      "doc_o_zsh": "1",
+      "doc_o_zgo_vch": "1",
+      "doc_o_zgo": "1",
+      "doc_o_zsh_vch": "1",
+      "doc_supplemented": "1",
+      "doc_supplementing": "1",
+      "doc_outside_system": "1",
+      "doc_html_content": "qqq",
+      "doc_image_content": "qqq",
+      "image_contemt_name": "qqq",
+      "doc_pdf_content": "qqq",
+      "pdf_content_name": "qqq",
+      "doc_changes": "qqq",
+      "has_document_case": "qqq",
+      "classifier_enterd_countries": [
+        1,
+        2
+      ],
+      "classifier_okved": [
+        1
+      ],
+      "classifier_oks": [
+        1
+      ],
+      "classifier_okp": [
+        2
+      ],
+      "doc_origin_language": [
+        2
+      ],
+      "related_documents": []
+    }
+  },
+  {
+    "model": "documents.documents",
+    "pk": 488,
+    "fields": {
+      "doc_kind": "ГОСТ",
+      "doc_mark": "1",
+      "doc_name_ru": "Дороги автомобильные общего пользования. Экраны акустические. Методы контроля",
+      "doc_name_en": "Automobile roads of general use. Acoustical barriers. Methods of testing",
+      "doc_annotation": "Настоящий стандарт распространяется на акустические экраны, устанавливаемые вдоль автомобильных дорог общего пользования для защиты от шума транспортного потока придорожной полосы и/или прилегающей к ней селитебной территории и/или отдельных объектов защиты, и устанавливает методы и методики контрольных испытаний.\n   Настоящий стандарт устанавливает методы контроля выполнения технических требований по ГОСТ 32957, предъявляемые к акустическим экранам",
+      "doc_comment": "",
+      "doc_sys_number": "3432",
+      "doc_full_mark": "1",
+      "doc_status": "actual",
+      "application_status": "voluntary",
+      "doc_reg_date": "2019-03-10",
+      "doc_limit_date": "2020-03-10",
+      "doc_on_rf_use": null,
+      "classifier_pns": "2344",
+      "doc_assign_org": "2344",
+      "doc_assign_date": "2019-03-10",
+      "doc_reg_text": "234",
+      "doc_effective_date": "2019-03-10",
+      "doc_restoration_date": "2019-03-10",
+      "doc_enter_org": "1",
+      "tk_rus": "23",
+      "org_author_name": "1",
+      "mtk_dev": "1",
+      "keywords": "1",
+      "doc_annotation_ru": "1",
+      "contains_in_npa_links": true,
+      "cancel_in_part": "1",
+      "doc_o_zsh": "1",
+      "doc_o_zgo_vch": "1",
+      "doc_o_zgo": "1",
+      "doc_o_zsh_vch": "1",
+      "doc_supplemented": "1",
+      "doc_supplementing": "1",
+      "doc_outside_system": "1",
+      "doc_html_content": "qqq",
+      "doc_image_content": "qqq",
+      "image_contemt_name": "qqq",
+      "doc_pdf_content": "qqq",
+      "pdf_content_name": "qqq",
+      "doc_changes": "qqq",
+      "has_document_case": "qqq",
+      "classifier_enterd_countries": [
+        1,
+        2
+      ],
+      "classifier_okved": [
+        1
+      ],
+      "classifier_oks": [
+        1
+      ],
+      "classifier_okp": [
+        2
+      ],
+      "doc_origin_language": [
+        2
+      ],
+      "related_documents": []
+    }
+  },
+  {
+    "model": "documents.documents",
+    "pk": 559,
+    "fields": {
+      "doc_kind": "ГОСТ",
+      "doc_mark": "1",
+      "doc_name_ru": "Экраны акустические для железнодорожного транспорта. Технические требования",
+      "doc_name_en": "Acoustical barriers for railway transport. Technical reguirements",
+      "doc_annotation": "Настоящий стандарт устанавливает технические требования к акустическим экранам, устанавливаемым вдоль железнодорожных путей общего пользования для защиты прилегающих жилых застроек и селитебных территорий от шума потоков железнодорожного транспорта.\n   Настоящий стандарт распространяется на проектирование, изготовление, монтаж и эксплуатацию акустических экранов вдоль железнодорожных путей общего пользования.\n   Настоящий стандарт не распространяется на акустические экраны, устанавливаемые вдоль автомобильных дорог, вокруг промышленных предприятий, отдельных стационарных источников шума и других объектов, не относящихся к железнодорожным путям",
+      "doc_comment": "",
+      "doc_sys_number": "3432",
+      "doc_full_mark": "1",
+      "doc_status": "actual",
+      "application_status": "voluntary",
+      "doc_reg_date": "2019-03-10",
+      "doc_limit_date": "2020-03-10",
+      "doc_on_rf_use": null,
+      "classifier_pns": "2344",
+      "doc_assign_org": "2344",
+      "doc_assign_date": "2019-03-10",
+      "doc_reg_text": "234",
+      "doc_effective_date": "2019-03-10",
+      "doc_restoration_date": "2019-03-10",
+      "doc_enter_org": "1",
+      "tk_rus": "23",
+      "org_author_name": "1",
+      "mtk_dev": "1",
+      "keywords": "1",
+      "doc_annotation_ru": "1",
+      "contains_in_npa_links": true,
+      "cancel_in_part": "1",
+      "doc_o_zsh": "1",
+      "doc_o_zgo_vch": "1",
+      "doc_o_zgo": "1",
+      "doc_o_zsh_vch": "1",
+      "doc_supplemented": "1",
+      "doc_supplementing": "1",
+      "doc_outside_system": "1",
+      "doc_html_content": "qqq",
+      "doc_image_content": "qqq",
+      "image_contemt_name": "qqq",
+      "doc_pdf_content": "qqq",
+      "pdf_content_name": "qqq",
+      "doc_changes": "qqq",
+      "has_document_case": "qqq",
+      "classifier_enterd_countries": [
+        1,
+        2
+      ],
+      "classifier_okved": [
+        1
+      ],
+      "classifier_oks": [
+        1
+      ],
+      "classifier_okp": [
+        2
+      ],
+      "doc_origin_language": [
+        2
+      ],
+      "related_documents": []
+    }
+  },
+  {
+    "model": "documents.documents",
+    "pk": 592,
+    "fields": {
+      "doc_kind": "ГОСТ",
+      "doc_mark": "1",
+      "doc_name_ru": "Дороги автомобильные общего пользования. Экраны акустические. Технические требования",
+      "doc_name_en": "Automobile roads of general use. Acoustical barriers. Technical requirements",
+      "doc_annotation": "Настоящий стандарт распространяется на акустические экраны, устанавливаемые вдоль автомобильных дорог общего пользования для защиты от шума транспортного потока придорожной полосы, и/или прилегающей к ней селитебной территории, и/или отдельных объектов защиты.\n   Акустические экраны предназначены для снижения уровня звука от транспортного потока в контрольных точках до допустимого уровня, определяемого национальными нормами и правилами",
+      "doc_comment": "",
+      "doc_sys_number": "3432",
+      "doc_full_mark": "1",
+      "doc_status": "actual",
+      "application_status": "voluntary",
+      "doc_reg_date": "2019-03-10",
+      "doc_limit_date": "2020-03-10",
+      "doc_on_rf_use": null,
+      "classifier_pns": "2344",
+      "doc_assign_org": "2344",
+      "doc_assign_date": "2019-03-10",
+      "doc_reg_text": "234",
+      "doc_effective_date": "2019-03-10",
+      "doc_restoration_date": "2019-03-10",
+      "doc_enter_org": "1",
+      "tk_rus": "23",
+      "org_author_name": "1",
+      "mtk_dev": "1",
+      "keywords": "1",
+      "doc_annotation_ru": "1",
+      "contains_in_npa_links": true,
+      "cancel_in_part": "1",
+      "doc_o_zsh": "1",
+      "doc_o_zgo_vch": "1",
+      "doc_o_zgo": "1",
+      "doc_o_zsh_vch": "1",
+      "doc_supplemented": "1",
+      "doc_supplementing": "1",
+      "doc_outside_system": "1",
+      "doc_html_content": "qqq",
+      "doc_image_content": "qqq",
+      "image_contemt_name": "qqq",
+      "doc_pdf_content": "qqq",
+      "pdf_content_name": "qqq",
+      "doc_changes": "qqq",
+      "has_document_case": "qqq",
+      "classifier_enterd_countries": [
+        1,
+        2
+      ],
+      "classifier_okved": [
+        1
+      ],
+      "classifier_oks": [
+        1
+      ],
+      "classifier_okp": [
+        2
+      ],
+      "doc_origin_language": [
+        2
+      ],
+      "related_documents": []
+    }
+  },
+  {
+    "model": "documents.documents",
+    "pk": 597,
+    "fields": {
+      "doc_kind": "ГОСТ",
+      "doc_mark": "1",
+      "doc_name_ru": "Экраны акустические для железнодорожного транспорта. Методы контроля",
+      "doc_name_en": "Acoustical barriers for railway transport. Methods of control",
+      "doc_annotation": "Настоящий стандарт устанавливает методы контроля выполнения технических требований по ГОСТ 33329, предъявляемых к акустическим экранам, устанавливаемым вдоль железнодорожных путей общего пользования для защиты прилегающих жилой застройки и селитебных территорий от шума потоков железнодорожного транспорта.\n   Настоящий стандарт не распространяется на методы контроля акустических экранов, устанавливаемых вдоль автомобильных дорог, вокруг промышленных предприятий, отдельных стационарных источников шума и других объектов, не относящихся к железнодорожному транспорту",
+      "doc_comment": "",
+      "doc_sys_number": "3432",
+      "doc_full_mark": "1",
+      "doc_status": "actual",
+      "application_status": "voluntary",
+      "doc_reg_date": "2019-03-10",
+      "doc_limit_date": "2020-03-10",
+      "doc_on_rf_use": null,
+      "classifier_pns": "2344",
+      "doc_assign_org": "2344",
+      "doc_assign_date": "2019-03-10",
+      "doc_reg_text": "234",
+      "doc_effective_date": "2019-03-10",
+      "doc_restoration_date": "2019-03-10",
+      "doc_enter_org": "1",
+      "tk_rus": "23",
+      "org_author_name": "1",
+      "mtk_dev": "1",
+      "keywords": "1",
+      "doc_annotation_ru": "1",
+      "contains_in_npa_links": true,
+      "cancel_in_part": "1",
+      "doc_o_zsh": "1",
+      "doc_o_zgo_vch": "1",
+      "doc_o_zgo": "1",
+      "doc_o_zsh_vch": "1",
+      "doc_supplemented": "1",
+      "doc_supplementing": "1",
+      "doc_outside_system": "1",
+      "doc_html_content": "qqq",
+      "doc_image_content": "qqq",
+      "image_contemt_name": "qqq",
+      "doc_pdf_content": "qqq",
+      "pdf_content_name": "qqq",
+      "doc_changes": "qqq",
+      "has_document_case": "qqq",
+      "classifier_enterd_countries": [
+        1,
+        2
+      ],
+      "classifier_okved": [
+        1
+      ],
+      "classifier_oks": [
+        1
+      ],
+      "classifier_okp": [
+        2
+      ],
+      "doc_origin_language": [
+        2
+      ],
+      "related_documents": []
+    }
+  },
+  {
+    "model": "documents.documents",
+    "pk": 1045,
+    "fields": {
+      "doc_kind": "ГОСТ",
+      "doc_mark": "1",
+      "doc_name_ru": "Контроль состояния и диагностика машин. Требования к квалификации и оценке персонала. Часть 6. Метод акустической эмиссии",
+      "doc_name_en": "Condition monitoring and diagnostics of machines. Requirements for qualification and assessment of personnel. Part 6. Acoustic emission",
+      "doc_annotation": "Настоящий стандарт устанавливает требования к квалификации и оценке компетентности персонала, выполняющего работы по контролю состояния и диагностированию машин с использованием измерений и анализа сигналов акустической эмиссии",
+      "doc_comment": "",
+      "doc_sys_number": "3432",
+      "doc_full_mark": "1",
+      "doc_status": "actual",
+      "application_status": "voluntary",
+      "doc_reg_date": "2019-03-10",
+      "doc_limit_date": "2020-03-10",
+      "doc_on_rf_use": null,
+      "classifier_pns": "2344",
+      "doc_assign_org": "2344",
+      "doc_assign_date": "2019-03-10",
+      "doc_reg_text": "234",
+      "doc_effective_date": "2019-03-10",
+      "doc_restoration_date": "2019-03-10",
+      "doc_enter_org": "1",
+      "tk_rus": "23",
+      "org_author_name": "1",
+      "mtk_dev": "1",
+      "keywords": "1",
+      "doc_annotation_ru": "1",
+      "contains_in_npa_links": true,
+      "cancel_in_part": "1",
+      "doc_o_zsh": "1",
+      "doc_o_zgo_vch": "1",
+      "doc_o_zgo": "1",
+      "doc_o_zsh_vch": "1",
+      "doc_supplemented": "1",
+      "doc_supplementing": "1",
+      "doc_outside_system": "1",
+      "doc_html_content": "qqq",
+      "doc_image_content": "qqq",
+      "image_contemt_name": "qqq",
+      "doc_pdf_content": "qqq",
+      "pdf_content_name": "qqq",
+      "doc_changes": "qqq",
+      "has_document_case": "qqq",
+      "classifier_enterd_countries": [
+        1,
+        2
+      ],
+      "classifier_okved": [
+        1
+      ],
+      "classifier_oks": [
+        1
+      ],
+      "classifier_okp": [
+        2
+      ],
+      "doc_origin_language": [
+        2
+      ],
+      "related_documents": []
+    }
+  },
+  {
+    "model": "documents.documents",
+    "pk": 703,
+    "fields": {
+      "doc_kind": "ГОСТ",
+      "doc_mark": "1",
+      "doc_name_ru": "Контроль состояния и диагностика машин. Метод акустической эмиссии",
+      "doc_name_en": "Condition monitoring and diagnostics of machines. Acoustic emission method",
+      "doc_annotation": "Настоящий стандарт устанавливает общие принципы применения метода акустической эмиссии в целях контроля состояния и диагностирования машин, работающих в разных режимах и в разных условиях применения. Метод распространяется на все виды машин и основан на измерениях только тех сигналов, что распространяются по конструкции машины",
+      "doc_comment": "",
+      "doc_sys_number": "3432",
+      "doc_full_mark": "1",
+      "doc_status": "actual",
+      "application_status": "voluntary",
+      "doc_reg_date": "2019-03-10",
+      "doc_limit_date": "2020-03-10",
+      "doc_on_rf_use": null,
+      "classifier_pns": "2344",
+      "doc_assign_org": "2344",
+      "doc_assign_date": "2019-03-10",
+      "doc_reg_text": "234",
+      "doc_effective_date": "2019-03-10",
+      "doc_restoration_date": "2019-03-10",
+      "doc_enter_org": "1",
+      "tk_rus": "23",
+      "org_author_name": "1",
+      "mtk_dev": "1",
+      "keywords": "1",
+      "doc_annotation_ru": "1",
+      "contains_in_npa_links": true,
+      "cancel_in_part": "1",
+      "doc_o_zsh": "1",
+      "doc_o_zgo_vch": "1",
+      "doc_o_zgo": "1",
+      "doc_o_zsh_vch": "1",
+      "doc_supplemented": "1",
+      "doc_supplementing": "1",
+      "doc_outside_system": "1",
+      "doc_html_content": "qqq",
+      "doc_image_content": "qqq",
+      "image_contemt_name": "qqq",
+      "doc_pdf_content": "qqq",
+      "pdf_content_name": "qqq",
+      "doc_changes": "qqq",
+      "has_document_case": "qqq",
+      "classifier_enterd_countries": [
+        1,
+        2
+      ],
+      "classifier_okved": [
+        1
+      ],
+      "classifier_oks": [
+        1
+      ],
+      "classifier_okp": [
+        2
+      ],
+      "doc_origin_language": [
+        2
+      ],
+      "related_documents": []
+    }
+  }
+]

@@ -1,0 +1,1501 @@
+{
+  "openapi" : "3.0.0",
+  "info" : {
+    "title" : "API",
+    "description" : "АПИ портала СТИ.",
+    "version" : "1.0.0"
+  },
+  "servers" : [ {
+    "url" : "/v1",
+    "description" : "Search API Auto Mocking"
+  }, {
+    "url" : "/v1"
+  } ],
+  "paths" : {
+    "/search/text/" : {
+      "post" : {
+        "tags" : [ "search" ],
+        "description" : "Расширенный поиск документа",
+        "parameters" : [ {
+          "name" : "Authorization",
+          "in" : "header",
+          "required" : true,
+          "style" : "simple",
+          "explode" : false,
+          "schema" : {
+            "type" : "string",
+            "description" : "Отправить токен"
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/body_2"
+              }
+            }
+          },
+          "required" : true
+        },
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/SearchResponse"
+                }
+              }
+            }
+          },
+          "404" : {
+            "description" : "Not found."
+          }
+        }
+      }
+    },
+    "/search/auto_completions/" : {
+      "post" : {
+        "tags" : [ "search" ],
+        "description" : "Запрос автодополнения",
+        "parameters" : [ {
+          "name" : "Authorization",
+          "in" : "header",
+          "required" : true,
+          "style" : "simple",
+          "explode" : false,
+          "schema" : {
+            "type" : "string",
+            "description" : "Отправить токен"
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/body_3"
+              }
+            }
+          },
+          "required" : true
+        },
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/AutoCompletionsResponse"
+                }
+              }
+            }
+          },
+          "404" : {
+            "description" : "Not found."
+          }
+        }
+      }
+    },
+    "/search/history/" : {
+      "get" : {
+        "tags" : [ "search" ],
+        "description" : "Запрос истории автодополнений",
+        "parameters" : [ {
+          "name" : "Authorization",
+          "in" : "header",
+          "required" : true,
+          "style" : "simple",
+          "explode" : false,
+          "schema" : {
+            "type" : "string",
+            "description" : "Отправить токен"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/AutoCompletionsResponse"
+                }
+              }
+            }
+          },
+          "404" : {
+            "description" : "Not found."
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "UserChange" : {
+        "type" : "object",
+        "properties" : {
+          "email" : {
+            "type" : "string",
+            "description" : "email пользователя"
+          },
+          "username" : {
+            "maxLength" : 50,
+            "type" : "string",
+            "description" : "Логин пользователя для входа на портал"
+          },
+          "first_name" : {
+            "maxLength" : 30,
+            "type" : "string",
+            "description" : "Имя"
+          },
+          "last_name" : {
+            "maxLength" : 30,
+            "type" : "string",
+            "description" : "Фамилия"
+          },
+          "patronymic" : {
+            "maxLength" : 30,
+            "type" : "string",
+            "description" : "Отчество"
+          },
+          "password" : {
+            "type" : "string",
+            "description" : "Пароль"
+          },
+          "phone" : {
+            "maxLength" : 30,
+            "type" : "string",
+            "description" : "Телефон"
+          },
+          "role" : {
+            "maxLength" : 2,
+            "type" : "string",
+            "description" : "Роль пользователя "
+          },
+          "company" : {
+            "type" : "integer",
+            "description" : "Компания пользователя"
+          },
+          "user_settings" : {
+            "$ref" : "#/components/schemas/UserChange_user_settings"
+          }
+        }
+      },
+      "UserResponse" : {
+        "type" : "object",
+        "properties" : {
+          "email" : {
+            "type" : "string",
+            "description" : "email пользователя"
+          },
+          "username" : {
+            "maxLength" : 50,
+            "type" : "string",
+            "description" : "Логин пользователя для входа на портал"
+          },
+          "first_name" : {
+            "maxLength" : 30,
+            "type" : "string",
+            "description" : "Имя"
+          },
+          "last_name" : {
+            "maxLength" : 30,
+            "type" : "string",
+            "description" : "Фамилия"
+          },
+          "patronymic" : {
+            "maxLength" : 30,
+            "type" : "string",
+            "description" : "Отчество"
+          },
+          "password" : {
+            "type" : "string",
+            "description" : "Пароль"
+          },
+          "phone" : {
+            "maxLength" : 30,
+            "type" : "string",
+            "description" : "Телефон"
+          },
+          "role" : {
+            "maxLength" : 2,
+            "type" : "string",
+            "description" : "Роль пользователя"
+          },
+          "company" : {
+            "type" : "integer",
+            "description" : "Компания пользователя"
+          },
+          "user_settings" : {
+            "$ref" : "#/components/schemas/UserChange_user_settings"
+          }
+        }
+      },
+      "UserCreate" : {
+        "type" : "object",
+        "properties" : {
+          "email" : {
+            "type" : "string",
+            "description" : "email пользователя"
+          },
+          "username" : {
+            "maxLength" : 50,
+            "type" : "string",
+            "description" : "Логин пользователя для входа на портал"
+          },
+          "first_name" : {
+            "maxLength" : 30,
+            "type" : "string",
+            "description" : "Имя"
+          },
+          "last_name" : {
+            "maxLength" : 30,
+            "type" : "string",
+            "description" : "Фамилия"
+          },
+          "patronymic" : {
+            "maxLength" : 30,
+            "type" : "string",
+            "description" : "Отчество"
+          },
+          "password" : {
+            "type" : "string",
+            "description" : "Пароль"
+          },
+          "phone" : {
+            "maxLength" : 30,
+            "type" : "string",
+            "description" : "Телефон"
+          },
+          "role" : {
+            "maxLength" : 2,
+            "type" : "string",
+            "description" : "Роль пользователя"
+          },
+          "company" : {
+            "$ref" : "#/components/schemas/UserCreate_company"
+          }
+        }
+      },
+      "Starred" : {
+        "type" : "array",
+        "description" : "Избранное",
+        "items" : {
+          "type" : "array",
+          "description" : "Древовидный список документов",
+          "items" : {
+            "type" : "string"
+          }
+        }
+      },
+      "Preferences" : {
+        "type" : "object",
+        "properties" : {
+          "font_size" : {
+            "type" : "string",
+            "description" : "Размер шрифта"
+          },
+          "font_colour" : {
+            "type" : "string",
+            "description" : "Цвет шрифта"
+          },
+          "scheme_colour" : {
+            "type" : "string",
+            "description" : "Цветовая схема"
+          },
+          "tips" : {
+            "type" : "array",
+            "description" : "Подсказки",
+            "items" : {
+              "$ref" : "#/components/schemas/Preferences_tips"
+            }
+          },
+          "menu" : {
+            "type" : "array",
+            "description" : "Настройки меню",
+            "items" : {
+              "type" : "string"
+            }
+          }
+        },
+        "description" : "Персональные настройки пользователя"
+      },
+      "Notification" : {
+        "type" : "array",
+        "description" : "Настройки набора уведомлений пользователя",
+        "items" : {
+          "$ref" : "#/components/schemas/Notification_inner"
+        }
+      },
+      "Documents" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "integer",
+            "description" : "Идентификатор документа",
+            "format" : "int64"
+          },
+          "doc_mark" : {
+            "type" : "string",
+            "description" : "Обозначение документа (краткое)"
+          },
+          "doc_name_ru" : {
+            "type" : "string",
+            "description" : "Наименование на русском языке"
+          },
+          "doc_status" : {
+            "type" : "string",
+            "description" : "Статус документа"
+          }
+        },
+        "description" : "Краткая информация о документе"
+      },
+      "FullDocument" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "integer",
+            "description" : "Идентификатор документа",
+            "format" : "int64"
+          },
+          "classifier_enterd_countries" : {
+            "type" : "array",
+            "description" : "Присоединившиеся страны СНГ",
+            "items" : {
+              "$ref" : "#/components/schemas/FullDocument_classifier_enterd_countries"
+            }
+          },
+          "classifier_okved" : {
+            "type" : "array",
+            "description" : "Код ОКВЭД",
+            "items" : {
+              "$ref" : "#/components/schemas/FullDocument_classifier_okved"
+            }
+          },
+          "classifier_oks" : {
+            "type" : "array",
+            "description" : "Код ОКС",
+            "items" : {
+              "$ref" : "#/components/schemas/FullDocument_classifier_oks"
+            }
+          },
+          "classifier_okp" : {
+            "type" : "array",
+            "description" : "Код ОКПД",
+            "items" : {
+              "$ref" : "#/components/schemas/FullDocument_classifier_okp"
+            }
+          },
+          "doc_origin_language" : {
+            "type" : "array",
+            "description" : "Язык оригинала",
+            "items" : {
+              "$ref" : "#/components/schemas/FullDocument_doc_origin_language"
+            }
+          },
+          "related_documents" : {
+            "type" : "array",
+            "description" : "Документы, на которые ссылается настоящий документ (1 уровень)",
+            "items" : {
+              "$ref" : "#/components/schemas/FullDocument_related_documents"
+            }
+          },
+          "doc_kind" : {
+            "description" : "Вид документа"
+          },
+          "doc_mark" : {
+            "type" : "string",
+            "description" : "Обозначение документа (краткое)"
+          },
+          "doc_name_ru" : {
+            "type" : "string",
+            "description" : "Наименование на русском языке"
+          },
+          "doc_name_en" : {
+            "type" : "string",
+            "description" : "Наименование на английском языке"
+          },
+          "doc_annotation" : {
+            "type" : "string",
+            "description" : "Аннотация (область применения)"
+          },
+          "doc_comment" : {
+            "type" : "string",
+            "description" : "Примечание"
+          },
+          "doc_sys_number" : {
+            "type" : "string",
+            "description" : "Системный номер документа"
+          },
+          "doc_full_mark" : {
+            "type" : "string",
+            "description" : "Полное обозначение документа"
+          },
+          "doc_status" : {
+            "type" : "string",
+            "description" : "Статус документа"
+          },
+          "application_status" : {
+            "type" : "string",
+            "description" : "Статус применения"
+          },
+          "doc_reg_date" : {
+            "type" : "string",
+            "description" : "Дата утверждения документа"
+          },
+          "doc_limit_date" : {
+            "type" : "string",
+            "description" : "Дата ограничения срока действия"
+          },
+          "doc_on_rf_use" : {
+            "type" : "boolean",
+            "description" : "На территории РФ пользоваться"
+          },
+          "classifier_pns" : {
+            "type" : "string",
+            "description" : "Шифр темы ПНС"
+          },
+          "doc_assign_org" : {
+            "type" : "string",
+            "description" : "Документ принят (организация)"
+          },
+          "doc_assign_date" : {
+            "type" : "string",
+            "description" : "Дата принятия"
+          },
+          "doc_reg_text" : {
+            "type" : "string",
+            "description" : "Номер приказа"
+          },
+          "doc_effective_date" : {
+            "type" : "string",
+            "description" : "Дата введения в действие"
+          },
+          "doc_restoration_date" : {
+            "type" : "string",
+            "description" : "Дата восстановления действия"
+          },
+          "doc_enter_org" : {
+            "type" : "string",
+            "description" : "Документ внесен (организация)"
+          },
+          "tk_rus" : {
+            "type" : "string",
+            "description" : "ТК России"
+          },
+          "org_author_name" : {
+            "type" : "string",
+            "description" : "Организация-разработчик"
+          },
+          "mtk_dev" : {
+            "type" : "string",
+            "description" : "МТК разработавший документ"
+          },
+          "keywords" : {
+            "type" : "string",
+            "description" : "Ключевые слова"
+          },
+          "doc_annotation_ru" : {
+            "type" : "string",
+            "description" : "Аннотация на русском языке"
+          },
+          "contains_in_npa_links" : {
+            "type" : "boolean",
+            "description" : "Содержатся в ссылках в НПА"
+          },
+          "cancel_in_part" : {
+            "type" : "string",
+            "description" : "Отменен в части"
+          },
+          "doc_o_zsh" : {
+            "type" : "string",
+            "description" : "Обозначение заменяющего"
+          },
+          "doc_o_zgo_vch" : {
+            "type" : "string",
+            "description" : "Обозначение заменяющего в части"
+          },
+          "doc_o_zgo" : {
+            "type" : "string",
+            "description" : "Обозначение заменяемого"
+          },
+          "doc_o_zsh_vch" : {
+            "type" : "string",
+            "description" : "Обозначение заменяемого в части"
+          },
+          "doc_supplemented" : {
+            "type" : "string",
+            "description" : "Обозначение дополняемого"
+          },
+          "doc_supplementing" : {
+            "type" : "string",
+            "description" : "Обозначение дополняющего"
+          },
+          "doc_outside_system" : {
+            "type" : "string",
+            "description" : "Документы вне системы, на которые ссылается настоящий документ"
+          },
+          "image_contemt_name" : {
+            "type" : "string",
+            "description" : "Наименование файла картинки"
+          },
+          "pdf_content_name" : {
+            "type" : "string",
+            "description" : "Наименование файла PDF"
+          },
+          "doc_changes" : {
+            "type" : "string",
+            "description" : "Изменения и правки"
+          },
+          "has_document_case" : {
+            "type" : "string",
+            "description" : "Дело документа"
+          }
+        },
+        "description" : "Полная информация о документе"
+      },
+      "ShortDocument" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "integer",
+            "description" : "Идентификатор документа",
+            "format" : "int64"
+          },
+          "doc_kind" : {
+            "description" : "Вид документа"
+          },
+          "doc_mark" : {
+            "type" : "string",
+            "description" : "Обозначение документа (краткое)"
+          },
+          "doc_name_ru" : {
+            "type" : "string",
+            "description" : "Наименование на русском языке"
+          },
+          "doc_comment" : {
+            "type" : "string",
+            "description" : "Примечание"
+          },
+          "doc_status" : {
+            "type" : "string",
+            "description" : "Статус документа"
+          },
+          "doc_reg_date" : {
+            "type" : "string",
+            "description" : "Дата утверждения документа"
+          },
+          "doc_assign_date" : {
+            "type" : "string",
+            "description" : "Дата принятия"
+          },
+          "doc_effective_date" : {
+            "type" : "string",
+            "description" : "Дата введения в действие"
+          },
+          "doc_restoration_date" : {
+            "type" : "string",
+            "description" : "Дата восстановления действия"
+          },
+          "cancel_in_part" : {
+            "type" : "string",
+            "description" : "Отменен в части"
+          }
+        },
+        "description" : "Краткая информация о документе"
+      },
+      "Notes" : {
+        "type" : "object",
+        "properties" : {
+          "count" : {
+            "type" : "integer",
+            "description" : "Количество заметок"
+          },
+          "next" : {
+            "type" : "string",
+            "description" : "Ссылка на последующую страницу пагинации, если нет, то null"
+          },
+          "previous" : {
+            "type" : "string",
+            "description" : "Ссылка на предыдущую страницу пагинации, если нет, то null"
+          },
+          "results" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/Notes_results"
+            }
+          }
+        },
+        "description" : "Список заметок"
+      },
+      "NotesCreate" : {
+        "type" : "object",
+        "properties" : {
+          "name" : {
+            "type" : "string",
+            "description" : "Название"
+          },
+          "content" : {
+            "type" : "string",
+            "description" : "Содержимое заметки в html формате"
+          },
+          "owner" : {
+            "type" : "string",
+            "description" : "Владелец заметки"
+          },
+          "access_user" : {
+            "type" : "array",
+            "description" : "Кому доступна заметка",
+            "items" : {
+              "type" : "integer"
+            }
+          }
+        },
+        "description" : "Создать заметку"
+      },
+      "NotesResponse" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "integer",
+            "description" : "Уникальное значение заметки",
+            "format" : "int64"
+          },
+          "name" : {
+            "type" : "string",
+            "description" : "Название"
+          },
+          "content" : {
+            "type" : "string",
+            "description" : "Содержимое заметки в html формате"
+          },
+          "owner" : {
+            "type" : "string",
+            "description" : "Владелец заметки"
+          },
+          "access_user" : {
+            "type" : "array",
+            "description" : "Кому доступна заметка",
+            "items" : {
+              "type" : "integer"
+            }
+          }
+        }
+      },
+      "NotesRequest" : {
+        "type" : "object",
+        "properties" : {
+          "name" : {
+            "type" : "string",
+            "description" : "Название"
+          },
+          "content" : {
+            "type" : "string",
+            "description" : "Содержимое заметки в html формате"
+          },
+          "owner" : {
+            "type" : "string",
+            "description" : "Владелец заметки"
+          },
+          "access_user" : {
+            "type" : "array",
+            "description" : "Кому доступна заметка",
+            "items" : {
+              "type" : "integer"
+            }
+          }
+        }
+      },
+      "Comment" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "string",
+            "description" : "id комментария"
+          },
+          "content" : {
+            "type" : "string",
+            "description" : "Текст комментария"
+          },
+          "owner" : {
+            "type" : "string",
+            "description" : "id пользователя что оставил комментарий"
+          }
+        },
+        "description" : "Комментарий"
+      },
+      "CommentRequest" : {
+        "type" : "object",
+        "properties" : {
+          "owner" : {
+            "type" : "string",
+            "description" : "id пользователя что оставил комментарий"
+          },
+          "content" : {
+            "type" : "string",
+            "description" : "Текст комментария"
+          }
+        },
+        "description" : "Комментарий"
+      },
+      "Folder" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "integer",
+            "description" : "id папки",
+            "format" : "int64"
+          },
+          "name" : {
+            "type" : "string",
+            "description" : "Наименование папки"
+          },
+          "access_user" : {
+            "type" : "array",
+            "description" : "Кому доступна просмотр папки",
+            "items" : {
+              "type" : "integer"
+            }
+          },
+          "documents" : {
+            "type" : "array",
+            "description" : "Документы внутри данной папки",
+            "items" : {
+              "$ref" : "#/components/schemas/Folder_documents"
+            }
+          },
+          "notes" : {
+            "type" : "array",
+            "description" : "Заметки внутри данной папки",
+            "items" : {
+              "$ref" : "#/components/schemas/Folder_notes"
+            }
+          },
+          "subfolders" : {
+            "type" : "array",
+            "description" : "Папки внутри данной папки",
+            "items" : {
+              "type" : "object"
+            }
+          }
+        },
+        "description" : "Папка"
+      },
+      "FolderResponse" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "integer",
+            "description" : "id папки"
+          },
+          "name" : {
+            "type" : "string",
+            "description" : "Наименование"
+          },
+          "access_user" : {
+            "type" : "array",
+            "description" : "Кому доступна папка",
+            "items" : {
+              "type" : "integer"
+            }
+          },
+          "documents" : {
+            "type" : "array",
+            "description" : "Документ в папке",
+            "items" : {
+              "type" : "string"
+            }
+          },
+          "notes" : {
+            "type" : "array",
+            "description" : "Заметка в папке",
+            "items" : {
+              "type" : "string"
+            }
+          },
+          "subfolders" : {
+            "type" : "array",
+            "description" : "Папки внутри данной папки",
+            "items" : {
+              "type" : "object"
+            }
+          }
+        }
+      },
+      "FolderRequest" : {
+        "type" : "object",
+        "properties" : {
+          "name" : {
+            "type" : "string",
+            "description" : "Наименование"
+          },
+          "access_user" : {
+            "type" : "array",
+            "description" : "Кому доступна папка",
+            "items" : {
+              "type" : "integer"
+            }
+          },
+          "documents" : {
+            "type" : "array",
+            "description" : "Документ в папке",
+            "items" : {
+              "type" : "string"
+            }
+          },
+          "notes" : {
+            "type" : "array",
+            "description" : "Заметка в папке",
+            "items" : {
+              "type" : "string"
+            }
+          }
+        }
+      },
+      "SearchResponse" : {
+        "type" : "object",
+        "properties" : {
+          "documents" : {
+            "type" : "array",
+            "description" : "Список документов отсортированный по убыванию релевантности",
+            "items" : {
+              "$ref" : "#/components/schemas/Documents"
+            }
+          }
+        }
+      },
+      "AutoCompletionsResponse" : {
+        "type" : "object",
+        "properties" : {
+          "auto_completions" : {
+            "type" : "array",
+            "description" : "Список авотдополнений, отсортированный по убыванию релевантности",
+            "items" : {
+              "type" : "string",
+              "description" : "автодополнение"
+            }
+          }
+        }
+      },
+      "SearchOptions" : {
+        "type" : "object",
+        "properties" : {
+          "document_type" : {
+            "type" : "string",
+            "description" : "Вид документа"
+          },
+          "brief_document_description" : {
+            "type" : "string",
+            "description" : "Краткое Обозначение документа"
+          },
+          "name_ru" : {
+            "type" : "string",
+            "description" : "Наименование на русском языке"
+          },
+          "name_en" : {
+            "type" : "string",
+            "description" : "Наименование на английском языке"
+          },
+          "abstract" : {
+            "type" : "string",
+            "description" : "Аннотация (Область применения)"
+          },
+          "note" : {
+            "type" : "string",
+            "description" : "Примечание"
+          },
+          "full_designation_of_the_document" : {
+            "type" : "string",
+            "description" : "Полное обозначение документа"
+          },
+          "document_status" : {
+            "type" : "string",
+            "description" : "Статус документа"
+          },
+          "document_approval_date" : {
+            "type" : "string",
+            "description" : "Дата утверждения документа"
+          },
+          "date_of_adoption" : {
+            "type" : "string",
+            "description" : "Дата принятия"
+          },
+          "effective_date" : {
+            "type" : "string",
+            "description" : "Дата введения в действие"
+          },
+          "recover_date" : {
+            "type" : "string",
+            "description" : "Дата восстановления действия"
+          },
+          "okved" : {
+            "type" : "string",
+            "description" : "ОКВЭД"
+          },
+          "oks" : {
+            "type" : "string",
+            "description" : "Код ОКС"
+          },
+          "tk" : {
+            "type" : "string",
+            "description" : "ТК России"
+          },
+          "mtk" : {
+            "type" : "string",
+            "description" : "МТК, разработавший документ"
+          },
+          "keywords" : {
+            "type" : "string",
+            "description" : "Ключевые слова"
+          }
+        }
+      },
+      "inline_response_200_user_settings" : {
+        "properties" : {
+          "font_size" : {
+            "type" : "integer"
+          },
+          "font_colour" : {
+            "type" : "string"
+          },
+          "scheme_colour" : {
+            "type" : "string"
+          }
+        }
+      },
+      "inline_response_200_results" : {
+        "type" : "object",
+        "properties" : {
+          "email" : {
+            "type" : "string"
+          },
+          "username" : {
+            "type" : "string"
+          },
+          "first_name" : {
+            "type" : "string"
+          },
+          "last_name" : {
+            "type" : "string"
+          },
+          "patronymic" : {
+            "type" : "string"
+          },
+          "phone" : {
+            "type" : "string"
+          },
+          "company" : {
+            "type" : "integer"
+          },
+          "role" : {
+            "type" : "string"
+          },
+          "user_settings" : {
+            "$ref" : "#/components/schemas/inline_response_200_user_settings"
+          }
+        }
+      },
+      "inline_response_200" : {
+        "type" : "object",
+        "properties" : {
+          "count" : {
+            "type" : "integer",
+            "description" : "Количество пользователей"
+          },
+          "next" : {
+            "type" : "string",
+            "description" : "Ссылка на последующую страницу пагинации, если нет, то null"
+          },
+          "previous" : {
+            "type" : "string",
+            "description" : "Ссылка на предыдущую страницу пагинации, если нет, то null"
+          },
+          "results" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/inline_response_200_results"
+            }
+          }
+        }
+      },
+      "body" : {
+        "required" : [ "email", "password" ],
+        "type" : "object",
+        "properties" : {
+          "email" : {
+            "type" : "string"
+          },
+          "password" : {
+            "type" : "string"
+          }
+        }
+      },
+      "inline_response_200_1_user" : {
+        "properties" : {
+          "email" : {
+            "type" : "string"
+          },
+          "username" : {
+            "type" : "string"
+          },
+          "first_name" : {
+            "type" : "string"
+          },
+          "last_name" : {
+            "type" : "string"
+          },
+          "patronymic" : {
+            "type" : "string"
+          },
+          "phone" : {
+            "type" : "string"
+          },
+          "role" : {
+            "type" : "string"
+          }
+        }
+      },
+      "inline_response_200_1" : {
+        "properties" : {
+          "expires_in" : {
+            "type" : "integer",
+            "description" : "срок действия токена в сек.",
+            "format" : "int32"
+          },
+          "token" : {
+            "type" : "string"
+          },
+          "user" : {
+            "$ref" : "#/components/schemas/inline_response_200_1_user"
+          }
+        }
+      },
+      "inline_response_200_2" : {
+        "type" : "object",
+        "properties" : {
+          "key" : {
+            "type" : "string",
+            "description" : "Ключ"
+          },
+          "value" : {
+            "type" : "string",
+            "description" : "Значение"
+          }
+        },
+        "description" : "Статистика"
+      },
+      "inline_response_200_3" : {
+        "type" : "object",
+        "properties" : {
+          "count" : {
+            "type" : "integer",
+            "description" : "Количество документов"
+          },
+          "next" : {
+            "type" : "string",
+            "description" : "Ссылка на последующую страницу пагинации, если нет, то null"
+          },
+          "previous" : {
+            "type" : "string",
+            "description" : "Ссылка на предыдущую страницу пагинации, если нет, то null"
+          },
+          "results" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/Documents"
+            }
+          }
+        }
+      },
+      "inline_response_200_4_cildren" : {
+        "type" : "object",
+        "properties" : {
+          "name" : {
+            "type" : "string",
+            "description" : "Название документа"
+          },
+          "id" : {
+            "type" : "integer",
+            "description" : "id документа"
+          },
+          "cildren" : {
+            "type" : "array",
+            "items" : {
+              "type" : "object"
+            }
+          }
+        }
+      },
+      "inline_response_200_4" : {
+        "type" : "object",
+        "properties" : {
+          "name" : {
+            "type" : "string",
+            "description" : "Название документа"
+          },
+          "id" : {
+            "type" : "integer",
+            "description" : "id документа"
+          },
+          "cildren" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/inline_response_200_4_cildren"
+            }
+          }
+        }
+      },
+      "inline_response_200_5" : {
+        "type" : "object",
+        "properties" : {
+          "count" : {
+            "type" : "integer",
+            "description" : "Количество пользователей"
+          },
+          "next" : {
+            "type" : "string",
+            "description" : "Ссылка на последующую страницу пагинации, если нет, то null"
+          },
+          "previous" : {
+            "type" : "string",
+            "description" : "Ссылка на предыдущую страницу пагинации, если нет, то null"
+          },
+          "results" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/Comment"
+            }
+          }
+        }
+      },
+      "inline_response_200_6" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "integer",
+            "description" : "id папки"
+          },
+          "name" : {
+            "type" : "string",
+            "description" : "Наименование папки"
+          },
+          "subfolders" : {
+            "type" : "array",
+            "description" : "Папки внутри данной папки",
+            "items" : {
+              "type" : "object"
+            }
+          }
+        }
+      },
+      "body_1" : {
+        "required" : [ "id", "type_content" ],
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "integer",
+            "description" : "id папки, в которой создается контент"
+          },
+          "type_content" : {
+            "type" : "string",
+            "description" : "тип добавляемого контента folders/documents/notes"
+          },
+          "id_content" : {
+            "type" : "integer",
+            "description" : "id добавляемого контента"
+          },
+          "parent" : {
+            "type" : "string",
+            "description" : "название вновь создаваемой папки"
+          }
+        }
+      },
+      "inline_response_200_7" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "integer",
+            "description" : "уникальный идентификатор пользователя"
+          },
+          "email" : {
+            "type" : "string",
+            "description" : "почта пользователя"
+          },
+          "username" : {
+            "type" : "string",
+            "description" : "username"
+          },
+          "first_name" : {
+            "type" : "string",
+            "description" : "имя"
+          },
+          "last_name" : {
+            "type" : "string",
+            "description" : "фамилия"
+          },
+          "patronymic" : {
+            "type" : "string",
+            "description" : "отчество"
+          }
+        }
+      },
+      "body_2" : {
+        "required" : [ "search_text" ],
+        "type" : "object",
+        "properties" : {
+          "search_text" : {
+            "type" : "string",
+            "description" : "Поисковый запрос"
+          },
+          "search_options" : {
+            "$ref" : "#/components/schemas/SearchOptions"
+          },
+          "page_size" : {
+            "type" : "integer",
+            "description" : "Количество записей на странице"
+          }
+        }
+      },
+      "body_3" : {
+        "required" : [ "search_text" ],
+        "type" : "object",
+        "properties" : {
+          "search_text" : {
+            "type" : "string",
+            "description" : "Поисковый запрос"
+          },
+          "page_size" : {
+            "type" : "integer",
+            "description" : "Количество возвращаемых записей"
+          }
+        }
+      },
+      "body_4" : {
+        "required" : [ "request_type", "requested_text", "wrong_responded_text" ],
+        "type" : "object",
+        "properties" : {
+          "requested_text" : {
+            "type" : "string",
+            "description" : "Запрашиваемый текст"
+          },
+          "wrong_responded_text" : {
+            "type" : "string",
+            "description" : "Запрашиваемый текст"
+          },
+          "request_type" : {
+            "type" : "integer",
+            "description" : "0 - документ, 1 - автодополнение"
+          }
+        }
+      },
+      "UserChange_user_settings" : {
+        "type" : "object",
+        "properties" : {
+          "font_size" : {
+            "type" : "integer",
+            "description" : "Размер шрифта"
+          },
+          "font_colour" : {
+            "type" : "string",
+            "description" : "Цвет шрифта"
+          },
+          "scheme_colour" : {
+            "type" : "string",
+            "description" : "Цветовая схема"
+          }
+        },
+        "description" : "Личные настройки пользователя"
+      },
+      "UserCreate_company" : {
+        "type" : "object",
+        "properties" : {
+          "company_name" : {
+            "maxLength" : 100,
+            "type" : "string",
+            "description" : "Название компании"
+          },
+          "position_сompany" : {
+            "type" : "string",
+            "description" : "Должность пользователя"
+          }
+        },
+        "description" : "Компания пользователя"
+      },
+      "Preferences_tips" : {
+        "type" : "object",
+        "properties" : {
+          "active" : {
+            "type" : "boolean",
+            "description" : "Активность подсказки",
+            "default" : false
+          },
+          "id" : {
+            "type" : "integer",
+            "description" : "Идентификатор pk подсказки",
+            "format" : "int64"
+          }
+        }
+      },
+      "Notification_inner" : {
+        "type" : "object",
+        "properties" : {
+          "active" : {
+            "type" : "boolean",
+            "description" : "Активность уведомления",
+            "default" : false
+          },
+          "id" : {
+            "type" : "integer",
+            "description" : "Идентификатор pk уведомления",
+            "format" : "int64"
+          }
+        }
+      },
+      "FullDocument_classifier_enterd_countries" : {
+        "properties" : {
+          "id" : {
+            "type" : "integer",
+            "description" : "Идентификатор страны"
+          },
+          "name" : {
+            "type" : "string",
+            "description" : "Название страны"
+          }
+        }
+      },
+      "FullDocument_classifier_okved" : {
+        "properties" : {
+          "id" : {
+            "type" : "integer",
+            "description" : "Идентификатор кода ОКВЭД"
+          },
+          "code" : {
+            "type" : "string",
+            "description" : "Код ОКВЭД"
+          },
+          "title" : {
+            "type" : "string",
+            "description" : "Наименование"
+          },
+          "description" : {
+            "type" : "string",
+            "description" : "Описание применения кода"
+          }
+        }
+      },
+      "FullDocument_classifier_oks" : {
+        "properties" : {
+          "id" : {
+            "type" : "integer",
+            "description" : "Идентификатор кода ОКС"
+          },
+          "code" : {
+            "type" : "string",
+            "description" : "Код ОКС"
+          },
+          "title" : {
+            "type" : "string",
+            "description" : "Наименование"
+          }
+        }
+      },
+      "FullDocument_classifier_okp" : {
+        "properties" : {
+          "id" : {
+            "type" : "integer",
+            "description" : "Идентификатор кода ОКПД"
+          },
+          "code" : {
+            "type" : "string",
+            "description" : "Код ОКПД"
+          },
+          "title" : {
+            "type" : "string",
+            "description" : "Наименование"
+          }
+        }
+      },
+      "FullDocument_doc_origin_language" : {
+        "properties" : {
+          "id" : {
+            "type" : "integer",
+            "description" : "Идентификатор кода ОКПД"
+          },
+          "language" : {
+            "type" : "string",
+            "description" : "Язык"
+          }
+        }
+      },
+      "FullDocument_related_documents" : {
+        "properties" : {
+          "id" : {
+            "type" : "integer",
+            "description" : "Идентификатор документа"
+          },
+          "doc_name_ru" : {
+            "type" : "string",
+            "description" : "Наименование на русском языке"
+          }
+        }
+      },
+      "Notes_results" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "integer",
+            "description" : "Идентификатор заметки",
+            "format" : "int64"
+          },
+          "name" : {
+            "type" : "string",
+            "description" : "Название"
+          },
+          "content" : {
+            "type" : "string",
+            "description" : "Содержимое заметки в html формате"
+          },
+          "owner" : {
+            "type" : "string",
+            "description" : "Владелец заметки"
+          },
+          "access_user" : {
+            "type" : "array",
+            "description" : "Кому доступна заметка",
+            "items" : {
+              "type" : "integer"
+            }
+          }
+        }
+      },
+      "Folder_documents" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "integer",
+            "description" : "id документа",
+            "format" : "int64"
+          },
+          "doc_name_ru" : {
+            "type" : "string",
+            "description" : "Наименование документа на русском языке"
+          }
+        }
+      },
+      "Folder_notes" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "integer",
+            "description" : "id заметки",
+            "format" : "int64"
+          },
+          "doc_name_ru" : {
+            "type" : "string",
+            "description" : "Наименование заметки"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,470 @@
+body {
+    margin: 0;
+}
+
+.sts-p {
+  text-align: justify;
+}
+
+span.sts-std-title {
+    font-style: normal;
+}
+
+span.sts-tbx-term {
+    font-weight: bold;
+}
+
+div.sts-section.frame, div.sts-section .frame {
+    border: 1px solid black;
+}
+
+.sts-non-normative-note-label {
+    letter-spacing: 0.5em;
+}
+
+/* 25 */
+.sts-fig .sts-caption > .sts-p, .sts-fig-group .sts-caption > .sts-p {
+    font-size: 8pt;
+    font-weight: normal;
+    letter-spacing: normal;
+    text-align: center;
+}
+.sts-fig-group .sts-caption > .sts-p {
+    text-indent: 9mm;
+    text-align: justify;
+}
+.fig-group-fig-sts-caption {
+    text-indent: 9mm;
+    font-size: 9pt;
+    text-align: justify;
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+}
+.fig-group-fig-sts-caption > .sts-p {
+    font-weight: normal;
+    letter-spacing: normal;
+    display: inline;
+}
+.sts-fig .sts-caption .sts-non-normative-note-label {
+    font-size: 8pt;
+    text-align: justify;
+}
+.sts-fig .sts-caption .sts-non-normative-note * {
+    text-align: justify;
+}
+
+.sts-tbx-sec-inner.frame {
+    display: block;
+}
+
+.title_wrap {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.title_wrap .title_wrap_main {
+    text-transform: uppercase;
+}
+
+/* 1 - view html as A4 (60×84⅛), 2 - dialing band */
+div.sts-standard
+{
+    max-width: 17cm;
+    margin: auto;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+/* 11 content - align, font, dots */
+
+.dots {
+  background: url('/static/img/dot.gif') repeat-x bottom;
+}
+
+.field {
+  background-color: #FFFFFF;
+}
+
+/* TOC */
+
+.front-sec-title, .front-toc-title {
+    text-align: center;
+}
+
+.sts-content-section {
+    page-break-after: always;
+    margin-bottom: 30pt;
+}
+
+#toc tbody {
+    font-size: 10pt;
+}
+
+/*14*/
+.first_div
+{
+    margin: auto;
+}
+.first_div p {
+    padding: 0;
+    margin: 0;
+}
+.first_div .std_title {
+    font-size: 10pt;
+    letter-spacing: 0.46em;
+    text-align: center;
+    text-align-last: justify;
+    font-weight: bold;
+    line-height: 2.5em;
+}
+.first_div .std_name_intro, .first_div .std_name_main, .first_div .std_name_compl {
+    font-size: 10pt;
+    text-align: center;
+    font-weight: bold;
+    padding: 5pt 0;
+}
+.std_name_main {
+    text-transform: uppercase;
+}
+.first_div .std_eng_name {
+    font-size: 9pt;
+    text-align: center;
+    padding-top: 5pt;
+    padding-bottom: 10pt;
+}
+
+.first_div hr {
+    background-color: black;
+    border: 0 none;
+    color: black;
+}
+.first_div .first_line {
+    height: 2.5pt;
+}
+.first_div .second_line {
+    height: 1.5pt;
+}
+.first_div .implement_date {
+    font-weight: bold;
+    font-size: 9pt;
+    text-align: right;
+    padding-bottom: 27pt;
+}
+
+/*15*/
+.sts-section p, .sts-section .sts-p {
+    text-indent: 9mm;
+    text-align: justify;
+}
+.sts-section .sts-sec-title {
+    text-indent: 9mm;
+}
+.sts-section .sts-p.align-center {
+    text-align: center;
+}
+.sts-section p.align-right, .sts-section .sts-p.align-right {
+    text-align: right;
+}
+
+/*17*/
+.sts-standard .sts-non-normative-note p,
+.sts-standard .sts-non-normative-note span {
+    font-size: 9pt;
+    line-height: 10.5pt;
+}
+.sts-app, .sts-app {
+    font-size: 9pt;
+}
+.sts-app p > *, .sts-non-normative-note p, .sts-app .sts-p{ text-indent: 9mm; }
+.sts-fig .sts-caption-label,
+.sts-fig .sts-caption-title,
+.sts-fig-group .sts-caption-label,
+.sts-fig-group .sts-caption-title {
+    font-size: 9pt;
+    font-weight: normal;
+    line-height: 10.5pt;
+}
+.sts-app-header {
+    font-weight: bold;
+}
+
+/*21*/
+table tbody {
+    line-height: 9.5pt;
+    font-size: 9pt;
+}
+table thead {
+    line-height: 9.5pt;
+    font-size: 8pt;
+}
+div.sts-table-wrap table .sts-p,
+div.sts-table-wrap table p
+{
+    text-indent: 0;
+}
+div.sts-table-wrap table thead {
+    border-bottom: double;
+}
+div.sts-table-wrap table th .sts-p {
+    text-align: center;
+}
+
+.sts-standard i {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.sts-standard .sts-table-wrap .sts-caption *,
+.sts-standard .sts-table-wrap .sts-caption
+{
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: normal;
+    text-align: justify;
+    text-indent: 0;
+}
+.sts-table-wrap .sts-caption {
+    letter-spacing: 0.3em;
+}
+.sts-table-wrap .sts-caption .sts-caption-title {
+    letter-spacing: normal;
+}
+.sts-table-wrap .sts-caption .sts-non-normative-note {
+    letter-spacing: normal;
+}
+.sts-table-wrap .sts-caption .sts-non-normative-note .sts-non-normative-note-label {
+    letter-spacing: 0.5em;
+}
+.sts-table-wrap .sts-caption .sts-caption-p-right {
+    float: right;
+    letter-spacing: normal;
+}
+.sts-table-wrap .sts-caption .sts-caption-p-right .sts-p {
+    margin: 0;
+}
+
+.sts-section div.sts-tbx-sec,
+.sts-section ul.sts-ref-list li
+{
+    text-indent: 9mm;
+}
+
+.sts-section .sts-table-wrap,
+.sts-section table {
+    width: 100%;
+}
+
+.sts-non-normative-example {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Title list */
+
+.header-with-logo {
+    justify-content: center;
+    border-top: 4.5pt black solid;
+    border-bottom: 2pt black solid;
+    padding: 15pt 0 15pt 0;
+}
+
+.header-with-logo h1 {
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: right;
+}
+.header-with-logo .header-logo, .header-with-logo .header-code {
+    width: 25%;
+}
+.header-with-logo table tbody * {
+    line-height: normal;
+}
+
+.header-with-logo .header-standard {
+    font-size: 12pt;
+    font-weight: bold;
+    letter-spacing: 0.5em;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.header-with-company-name {
+    border-top: 4.5pt black solid;
+    padding: 20pt 0;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2em;
+    text-transform: uppercase;
+}
+
+.title_wrap {
+    padding-top: 50pt;
+}
+
+.title_wrap_intro {
+    font-size: 18pt;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    padding-bottom: 30pt;
+    line-height: 1.2em;
+}
+
+.title_wrap_main {
+    font-size: 20pt;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    padding-bottom: 30pt;
+}
+
+.title_wrap_compl {
+    font-size: 18pt;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    padding-bottom: 30pt;
+    line-height: 1.2em;
+}
+
+.issue-status {
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20pt;
+}
+
+.issue-footer {
+    justify-content: center;
+    padding-top: 140pt;
+    page-break-after: always;
+}
+
+.issue-logo {
+    text-align: right;
+    width: 45%;
+}
+
+.issue-info {
+    font-size: 9pt;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 10pt;
+    width: 10%;
+}
+
+div.sts-section h1, div.sts-app h1 {
+    padding-top: 5pt;
+}
+
+
+div.sts-table-wrap.formula-index, div.sts-table-wrap.formula-index table {
+    margin-left: 0;
+}
+div.sts-table-wrap.formula-index table {
+    border: none;
+}
+div.sts-table-wrap.formula-index table td {
+    border: none;
+}
+div.sts-table-wrap.formula-index table td:first-child {
+    max-width: 0.1em;
+    padding-left: 0;
+}
+div.sts-table-wrap.formula-index table tr:first-child td:first-child {
+    max-width: none;
+}
+.explication table, .explication table td, .formula-index table .sts-p {
+    border: none;
+    vertical-align: top;
+}
+.explication table .sts-p, .formula-index table .sts-p {
+    margin: 0;
+}
+.explication table td:not(:last-child), .formula-index table td:not(:last-child) {
+    width: 1%;
+}
+.explication table td:first-child .sts-p, .formula-index table td:first-child .sts-p {
+    white-space: nowrap;
+    text-align: right;
+}
+
+.sts-disp-formula-panel {
+    text-align: center;
+}
+.sts-disp-formula-panel .sts-disp-formula-label {
+    float: right;
+}
+
+.sts-tbx-source {
+    display: block;
+}
+
+table.keywords_and_codes tbody {
+    font-size: 10pt;
+}
+.keywords_and_codes td {
+    text-align: right;
+    white-space: nowrap;
+    min-width: 70px;
+}
+.keywords_and_codes td:first-child {
+    text-align: left;
+    width: 33%;
+}
+
+.keywords_and_codes td.left-align {
+    text-align: left;
+}
+.sts-array-content td {
+    min-width: 30px;
+}
+.list ul {
+    padding-left: 0;
+}
+.list .list {
+    padding-left: 4mm;
+}
+.list li > div.sts-p {
+    text-indent: 9mm;
+}
+.sts-array-content {
+    vertical-align: top;
+}
+
+.sts-notes {
+    font-style: italic;
+}
+
+.sts-copyright-statement {
+    padding-top: 5mm;
+    text-align: justify;
+    text-indent: 9mm;
+}
+
+.sts-non-normative-note {
+    text-indent: 9mm;
+}
+.sts-non-normative-note p, .sts-non-normative-note .sts-p {
+    display: inline;
+}
+
+tbody {
+    vertical-align: top;
+}
+
+tbody[valign="top"] {
+    vertical-align: top;
+}
+tbody[valign="middle"] {
+    vertical-align: middle;
+}
+tbody[valign="bottom"] {
+    vertical-align: bottom;
+}
+
+span.sts-section-label {
+    padding-right: 0.5em;
+    font-weight: normal;
+}

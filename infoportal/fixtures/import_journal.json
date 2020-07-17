@@ -1,0 +1,52 @@
+[
+{
+    "model": "integration.journalrecord",
+    "pk": 1,
+    "fields": {
+        "type": "normdoc",
+        "level": "info",
+        "timestamp": "2019-11-26T12:27:46.330Z",
+        "message": "Запущен импорт из Нормдока."
+    }
+},
+{
+    "model": "integration.journalrecord",
+    "pk": 2,
+    "fields": {
+        "type": "normdoc",
+        "level": "error",
+        "timestamp": "2019-11-26T12:28:46.330Z",
+        "message": "Ошибка при поиске: получен код 401 от https://loclhost:18180/."
+    }
+},
+{
+    "model": "integration.journalrecord",
+    "pk": 3,
+    "fields": {
+        "type": "normdoc",
+        "level": "error",
+        "timestamp": "2019-11-26T12:29:46.330Z",
+        "message": "Импорт из Нормдока прерван из-за ошибки."
+    }
+},
+{
+    "model": "integration.journalrecord",
+    "pk": 4,
+    "fields": {
+        "type": "xml",
+        "level": "info",
+        "timestamp": "2019-11-26T13:27:46.330Z",
+        "message": "Запущен импорт из БД c XML."
+    }
+},
+{
+    "model": "integration.journalrecord",
+    "pk": 5,
+    "fields": {
+        "type": "xml",
+        "level": "info",
+        "timestamp": "2019-11-26T13:28:46.330Z",
+        "message": "Успешно завершен импорт из БД c XML."
+    }
+}
+]

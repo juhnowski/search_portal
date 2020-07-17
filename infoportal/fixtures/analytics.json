@@ -1,0 +1,67 @@
+[
+    {
+        "model": "analytics.DocumentsAnalytics",
+        "pk": 1,
+        "fields": {
+            "date": "2019-11-25",
+            "total_docs": 1,
+            "gost_r": 0,
+            "pnst": 0,
+            "gost": 1,
+            "pr": 0,
+            "r": 0,
+            "pmg": 0,
+            "rmg": 0,
+            "its": 0,
+            "ok": 0,
+            "sp": 0,
+            "iso": 0,
+            "mek": 0,
+            "russian_docs": 1,
+            "foreign_docs": 0
+        }
+    },{
+        "model": "analytics.DocumentsAnalytics",
+        "pk": 2,
+        "fields": {
+            "date": "2019-12-02",
+            "total_docs": 2,
+            "gost_r": 0,
+            "pnst": 0,
+            "gost": 1,
+            "pr": 0,
+            "r": 1,
+            "pmg": 0,
+            "rmg": 0,
+            "its": 0,
+            "ok": 0,
+            "sp": 0,
+            "iso": 0,
+            "mek": 0,
+            "russian_docs": 2,
+            "foreign_docs": 0
+        }
+    },
+    {
+        "model": "analytics.analytics",
+        "pk": 1,
+        "fields": {
+            "date": "2019-11-25",
+            "documents_id": 1,
+            "users": 2,
+            "notes": 2,
+            "companies": 2
+        }
+    },
+    {
+        "model": "analytics.analytics",
+        "pk": 2,
+        "fields": {
+            "date": "2019-12-02",
+            "documents_id": 2,
+            "users": 2,
+            "notes": 2,
+            "companies": 2
+        }
+    }
+]

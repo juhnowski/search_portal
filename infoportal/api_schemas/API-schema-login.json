@@ -1,0 +1,113 @@
+{
+  "info" : {
+    "title" : "API",
+    "version" : "1.0.0",
+    "description" : "АПИ портала СТИ."
+  },
+  "servers" : [ {
+    "url" : "/v1"
+  } ],
+  "openapi" : "3.0.0",
+  "paths" : {
+    "/login" : {
+      "post" : {
+        "tags" : [ "login" ],
+        "summary" : "Login",
+        "description" : "Авторизация пользователя, получение токена",
+        "operationId" : "loginUser",
+        "requestBody" : {
+          "required" : true,
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "type" : "object",
+                "required" : [ "email", "password" ],
+                "properties" : {
+                  "email" : {
+                    "type" : "string"
+                  },
+                  "password" : {
+                    "type" : "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "properties" : {
+                    "user" : {
+                      "properties" : {
+                        "id" : {
+                          "type" : "integer"
+                        },
+                        "email" : {
+                          "type" : "string"
+                        },
+                        "username" : {
+                          "type" : "string"
+                        },
+                        "first_name" : {
+                          "type" : "string"
+                        },
+                        "last_name" : {
+                          "type" : "string"
+                        },
+                        "patronymic" : {
+                          "type" : "string"
+                        },
+                        "phone" : {
+                          "type" : "string"
+                        },
+                        "company" : {
+                          "type" : "integer"
+                        },
+                        "role" : {
+                          "type" : "string"
+                        },
+                        "user_settings" : {
+                          "type" : "object",
+                          "description" : "Личные настройки пользователя",
+                          "properties" : {
+                            "font_size" : {
+                              "description" : "Размер шрифта",
+                              "type" : "integer"
+                            },
+                            "font_colour" : {
+                              "description" : "Цвет шрифта",
+                              "type" : "string"
+                            },
+                            "scheme_colour" : {
+                              "description" : "Цветовая схема",
+                              "type" : "string"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "expires_in" : {
+                      "type" : "integer",
+                      "format" : "int32",
+                      "description" : "срок действия токена в сек."
+                    },
+                    "token" : {
+                      "type" : "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        }
+      }
+    }
+  }
+}

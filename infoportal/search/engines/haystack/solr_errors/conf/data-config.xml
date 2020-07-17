@@ -1,0 +1,44 @@
+<dataConfig>
+    <dataSource
+            type="JdbcDataSource"
+            name="infoportal"
+            driver="org.postgresql.Driver"
+            url="jdbc:postgresql://127.0.0.1:5432/infoportal"
+            user="infoportal"
+            password="infoportal"
+    />
+
+    <document name="documents_documents">
+        <entity name="document" query="SELECT * FROM documents_documents;">
+            <field column="doc_kind" name="doc_kind"/>
+            <field column="doc_mark" name="doc_mark"/>
+            <field column="doc_name_ru" name="doc_name_ru"/>
+            <field column="doc_name_en" name="doc_name_en"/>
+            <field column="doc_annotation" name="doc_annotation"/>
+            <field column="doc_comment" name="doc_comment"/>
+            <field column="doc_full_mark" name="doc_full_mark"/>
+            <field column="tk_rus" name="tk_rus"/>
+            <field column="mtk_dev" name="mtk_dev"/>
+            <field column="keywords" name="keywords"/>
+            <field column="doc_assign_date" name="doc_assign_date"/>
+            <field column="doc_effective_date" name="doc_effective_date"/>
+            <field column="doc_restoration_date" name="doc_restoration_date"/>
+        </entity>
+    </document>
+
+    <auto_completion name="search_autocompletion">
+        <entity name="autocompletion" query="SELECT * FROM search_autocompletion;">
+            <field column="search_text" name="search_text"/>
+        </entity>
+    </auto_completion>
+
+</dataConfig>
+
+
+        'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'infoportal',
+        'USER': 'infoportal',
+        'PASSWORD': 'infoportal',
+        'HOST': 'localhost',
+        'PORT': '',
